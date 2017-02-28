@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/jc1.dir/jc1.cpp.o  -o jc1  -L/usr/local/lib -rdynamic 

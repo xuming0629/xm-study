@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/tuan.dir/tuan.cpp.o  -o tuan  -L/usr/local/lib -rdynamic 

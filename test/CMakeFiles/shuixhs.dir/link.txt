@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/shuixhs.dir/shuixhs.o  -o shuixhs -rdynamic 

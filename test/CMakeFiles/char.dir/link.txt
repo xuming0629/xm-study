@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/char.dir/char.o  -o char -rdynamic 

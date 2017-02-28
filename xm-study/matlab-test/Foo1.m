@@ -1,0 +1,5 @@
+function y=Foo1(x)
+y=x.*sin(x)
+b=LoadAssembler1D(x,@Foo1)
+Foo1=inline('x.*sin(x)','x')
+b=LoadAssembler1D(x,Foo1)

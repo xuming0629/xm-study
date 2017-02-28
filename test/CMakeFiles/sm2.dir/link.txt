@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/sm2.dir/sm2.o  -o sm2 -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/zhuanzhi.dir/zhuanzhi.o  -o zhuanzhi -rdynamic 

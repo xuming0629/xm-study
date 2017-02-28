@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/sum1.dir/sum1.o  -o sum1 -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/yanghuisanjiao.dir/yanghuisanjiao.cpp.o  -o yanghuisanjiao  -L/usr/local/lib -rdynamic 

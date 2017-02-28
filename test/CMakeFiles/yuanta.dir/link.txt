@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/yuanta.dir/yuanta.o  -o yuanta -rdynamic 

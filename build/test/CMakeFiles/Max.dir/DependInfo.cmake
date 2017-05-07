@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/xuming/repository/xuming_study/test/Max.c" "/home/xuming/repository/xuming_study/build/test/CMakeFiles/Max.dir/Max.c.o"
+  "/home/xm/repository/xm-study/test/Max.c" "/home/xm/repository/xm-study/build/test/CMakeFiles/Max.dir/Max.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/xuming/repository/xuming_study/test
+# Install script for directory: /home/xm/repository/xm-study/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

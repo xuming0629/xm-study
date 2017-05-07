@@ -1,4 +1,4 @@
-# Install script for directory: /home/xuming/repository/xuming_study
+# Install script for directory: /home/xm/repository/xm-study
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/xuming/repository/xuming_study/build/src/cmake_install.cmake")
-  include("/home/xuming/repository/xuming_study/build/test/cmake_install.cmake")
+  include("/home/xm/repository/xm-study/build/src/cmake_install.cmake")
+  include("/home/xm/repository/xm-study/build/test/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/xuming/repository/xuming_study/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xm/repository/xm-study/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

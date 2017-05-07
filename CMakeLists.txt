@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(xuming_study)
+project(xm-study)
 
 if(NOT CGAL_DIR)
     set(CGAL_DIR "/usr/local")

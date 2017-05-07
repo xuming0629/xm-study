@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/erfenfa.dir/erfenfa.o  -o erfenfa -rdynamic 

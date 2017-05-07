@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/xuming/repository/xuming_study/test/CGAL_test.cpp
+/home/xm/repository/xm-study/test/CGAL_test.cpp
 iostream
 -
 CGAL/Exact_predicates_inexact_constructions_kernel.h

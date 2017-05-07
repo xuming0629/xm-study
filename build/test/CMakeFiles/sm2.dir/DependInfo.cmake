@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xuming/repository/xuming_study/test/sm2.cpp" "/home/xuming/repository/xuming_study/build/test/CMakeFiles/sm2.dir/sm2.cpp.o"
+  "/home/xm/repository/xm-study/test/sm2.cpp" "/home/xm/repository/xm-study/build/test/CMakeFiles/sm2.dir/sm2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

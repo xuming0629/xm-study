@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/sushu.dir/sushu.o  -o sushu -rdynamic 

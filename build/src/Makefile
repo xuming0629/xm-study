@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuming/repository/xuming_study
+CMAKE_SOURCE_DIR = /home/xm/repository/xm-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuming/repository/xuming_study/build
+CMAKE_BINARY_DIR = /home/xm/repository/xm-study/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles /home/xuming/repository/xuming_study/build/src/CMakeFiles/progress.marks
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles /home/xm/repository/xm-study/build/src/CMakeFiles/progress.marks
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,17 +141,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

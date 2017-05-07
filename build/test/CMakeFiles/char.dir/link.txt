@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/char.dir/char.cpp.o  -o char  -L/usr/local/lib -rdynamic 

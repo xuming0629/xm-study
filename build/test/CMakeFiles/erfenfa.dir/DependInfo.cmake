@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xuming/repository/xuming_study/test/erfenfa.cpp" "/home/xuming/repository/xuming_study/build/test/CMakeFiles/erfenfa.dir/erfenfa.cpp.o"
+  "/home/xm/repository/xm-study/test/erfenfa.cpp" "/home/xm/repository/xm-study/build/test/CMakeFiles/erfenfa.dir/erfenfa.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

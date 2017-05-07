@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuming/repository/xuming_study
+CMAKE_SOURCE_DIR = /home/xm/repository/xm-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuming/repository/xuming_study/build
+CMAKE_BINARY_DIR = /home/xm/repository/xm-study/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles /home/xuming/repository/xuming_study/build/test/CMakeFiles/progress.marks
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles /home/xm/repository/xm-study/build/test/CMakeFiles/progress.marks
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/struct.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct.dir/rule
 .PHONY : test/CMakeFiles/struct.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ struct: test/CMakeFiles/struct.dir/rule
 
 # fast build rule for target.
 struct/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
 .PHONY : struct/fast
 
 # Convenience name for target.
 test/CMakeFiles/if_else.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/if_else.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/if_else.dir/rule
 .PHONY : test/CMakeFiles/if_else.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ if_else: test/CMakeFiles/if_else.dir/rule
 
 # fast build rule for target.
 if_else/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/build
 .PHONY : if_else/fast
 
 # Convenience name for target.
 test/CMakeFiles/Sum.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Sum.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Sum.dir/rule
 .PHONY : test/CMakeFiles/Sum.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ Sum: test/CMakeFiles/Sum.dir/rule
 
 # fast build rule for target.
 Sum/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/build
 .PHONY : Sum/fast
 
 # Convenience name for target.
 test/CMakeFiles/Max.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Max.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Max.dir/rule
 .PHONY : test/CMakeFiles/Max.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ Max: test/CMakeFiles/Max.dir/rule
 
 # fast build rule for target.
 Max/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/build
 .PHONY : Max/fast
 
 # Convenience name for target.
 test/CMakeFiles/sm2.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sm2.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sm2.dir/rule
 .PHONY : test/CMakeFiles/sm2.dir/rule
 
 # Convenience name for target.
@@ -226,12 +226,12 @@ sm2: test/CMakeFiles/sm2.dir/rule
 
 # fast build rule for target.
 sm2/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
 .PHONY : sm2/fast
 
 # Convenience name for target.
 test/CMakeFiles/zhizhen.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhizhen.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhizhen.dir/rule
 .PHONY : test/CMakeFiles/zhizhen.dir/rule
 
 # Convenience name for target.
@@ -241,12 +241,12 @@ zhizhen: test/CMakeFiles/zhizhen.dir/rule
 
 # fast build rule for target.
 zhizhen/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
 .PHONY : zhizhen/fast
 
 # Convenience name for target.
 test/CMakeFiles/convert.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/convert.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/convert.dir/rule
 .PHONY : test/CMakeFiles/convert.dir/rule
 
 # Convenience name for target.
@@ -256,12 +256,12 @@ convert: test/CMakeFiles/convert.dir/rule
 
 # fast build rule for target.
 convert/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/build
 .PHONY : convert/fast
 
 # Convenience name for target.
 test/CMakeFiles/equation1.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation1.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation1.dir/rule
 .PHONY : test/CMakeFiles/equation1.dir/rule
 
 # Convenience name for target.
@@ -271,12 +271,12 @@ equation1: test/CMakeFiles/equation1.dir/rule
 
 # fast build rule for target.
 equation1/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/build
 .PHONY : equation1/fast
 
 # Convenience name for target.
 test/CMakeFiles/sushu.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sushu.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sushu.dir/rule
 .PHONY : test/CMakeFiles/sushu.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ sushu: test/CMakeFiles/sushu.dir/rule
 
 # fast build rule for target.
 sushu/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
 .PHONY : sushu/fast
 
 # Convenience name for target.
 test/CMakeFiles/zhengchu.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhengchu.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhengchu.dir/rule
 .PHONY : test/CMakeFiles/zhengchu.dir/rule
 
 # Convenience name for target.
@@ -301,12 +301,12 @@ zhengchu: test/CMakeFiles/zhengchu.dir/rule
 
 # fast build rule for target.
 zhengchu/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
 .PHONY : zhengchu/fast
 
 # Convenience name for target.
 test/CMakeFiles/jiecheng.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jiecheng.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jiecheng.dir/rule
 .PHONY : test/CMakeFiles/jiecheng.dir/rule
 
 # Convenience name for target.
@@ -316,12 +316,12 @@ jiecheng: test/CMakeFiles/jiecheng.dir/rule
 
 # fast build rule for target.
 jiecheng/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
 .PHONY : jiecheng/fast
 
 # Convenience name for target.
 test/CMakeFiles/qdxs.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/qdxs.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/qdxs.dir/rule
 .PHONY : test/CMakeFiles/qdxs.dir/rule
 
 # Convenience name for target.
@@ -331,12 +331,12 @@ qdxs: test/CMakeFiles/qdxs.dir/rule
 
 # fast build rule for target.
 qdxs/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
 .PHONY : qdxs/fast
 
 # Convenience name for target.
 test/CMakeFiles/paixu.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/paixu.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/paixu.dir/rule
 .PHONY : test/CMakeFiles/paixu.dir/rule
 
 # Convenience name for target.
@@ -346,12 +346,12 @@ paixu: test/CMakeFiles/paixu.dir/rule
 
 # fast build rule for target.
 paixu/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
 .PHONY : paixu/fast
 
 # Convenience name for target.
 test/CMakeFiles/Helloworld.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Helloworld.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Helloworld.dir/rule
 .PHONY : test/CMakeFiles/Helloworld.dir/rule
 
 # Convenience name for target.
@@ -361,12 +361,12 @@ Helloworld: test/CMakeFiles/Helloworld.dir/rule
 
 # fast build rule for target.
 Helloworld/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/build
 .PHONY : Helloworld/fast
 
 # Convenience name for target.
 test/CMakeFiles/max-jz.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max-jz.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max-jz.dir/rule
 .PHONY : test/CMakeFiles/max-jz.dir/rule
 
 # Convenience name for target.
@@ -376,12 +376,12 @@ max-jz: test/CMakeFiles/max-jz.dir/rule
 
 # fast build rule for target.
 max-jz/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/build
 .PHONY : max-jz/fast
 
 # Convenience name for target.
 test/CMakeFiles/math1.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/math1.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/math1.dir/rule
 .PHONY : test/CMakeFiles/math1.dir/rule
 
 # Convenience name for target.
@@ -391,12 +391,12 @@ math1: test/CMakeFiles/math1.dir/rule
 
 # fast build rule for target.
 math1/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/build
 .PHONY : math1/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/rule
 .PHONY : test/CMakeFiles/CGAL_test.dir/rule
 
 # Convenience name for target.
@@ -406,12 +406,12 @@ CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
 
 # fast build rule for target.
 CGAL_test/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
 .PHONY : CGAL_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/sqr.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sqr.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sqr.dir/rule
 .PHONY : test/CMakeFiles/sqr.dir/rule
 
 # Convenience name for target.
@@ -421,12 +421,12 @@ sqr: test/CMakeFiles/sqr.dir/rule
 
 # fast build rule for target.
 sqr/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
 .PHONY : sqr/fast
 
 # Convenience name for target.
 test/CMakeFiles/tuan.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tuan.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tuan.dir/rule
 .PHONY : test/CMakeFiles/tuan.dir/rule
 
 # Convenience name for target.
@@ -436,12 +436,12 @@ tuan: test/CMakeFiles/tuan.dir/rule
 
 # fast build rule for target.
 tuan/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
 .PHONY : tuan/fast
 
 # Convenience name for target.
 test/CMakeFiles/Fibonacci.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Fibonacci.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Fibonacci.dir/rule
 .PHONY : test/CMakeFiles/Fibonacci.dir/rule
 
 # Convenience name for target.
@@ -451,12 +451,12 @@ Fibonacci: test/CMakeFiles/Fibonacci.dir/rule
 
 # fast build rule for target.
 Fibonacci/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/build
 .PHONY : Fibonacci/fast
 
 # Convenience name for target.
 test/CMakeFiles/jc1.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jc1.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jc1.dir/rule
 .PHONY : test/CMakeFiles/jc1.dir/rule
 
 # Convenience name for target.
@@ -466,12 +466,12 @@ jc1: test/CMakeFiles/jc1.dir/rule
 
 # fast build rule for target.
 jc1/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/build
 .PHONY : jc1/fast
 
 # Convenience name for target.
 test/CMakeFiles/main.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/rule
 .PHONY : test/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -481,12 +481,12 @@ main: test/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 # Convenience name for target.
 test/CMakeFiles/erfenfa.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/erfenfa.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/erfenfa.dir/rule
 .PHONY : test/CMakeFiles/erfenfa.dir/rule
 
 # Convenience name for target.
@@ -496,12 +496,12 @@ erfenfa: test/CMakeFiles/erfenfa.dir/rule
 
 # fast build rule for target.
 erfenfa/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/build
 .PHONY : erfenfa/fast
 
 # Convenience name for target.
 test/CMakeFiles/shuixhs.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/shuixhs.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/shuixhs.dir/rule
 .PHONY : test/CMakeFiles/shuixhs.dir/rule
 
 # Convenience name for target.
@@ -511,12 +511,12 @@ shuixhs: test/CMakeFiles/shuixhs.dir/rule
 
 # fast build rule for target.
 shuixhs/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
 .PHONY : shuixhs/fast
 
 # Convenience name for target.
 test/CMakeFiles/sum1.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sum1.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sum1.dir/rule
 .PHONY : test/CMakeFiles/sum1.dir/rule
 
 # Convenience name for target.
@@ -526,12 +526,12 @@ sum1: test/CMakeFiles/sum1.dir/rule
 
 # fast build rule for target.
 sum1/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
 .PHONY : sum1/fast
 
 # Convenience name for target.
 test/CMakeFiles/max.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max.dir/rule
 .PHONY : test/CMakeFiles/max.dir/rule
 
 # Convenience name for target.
@@ -541,12 +541,12 @@ max: test/CMakeFiles/max.dir/rule
 
 # fast build rule for target.
 max/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
 .PHONY : max/fast
 
 # Convenience name for target.
 test/CMakeFiles/zhuanzhi.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhuanzhi.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhuanzhi.dir/rule
 .PHONY : test/CMakeFiles/zhuanzhi.dir/rule
 
 # Convenience name for target.
@@ -556,12 +556,12 @@ zhuanzhi: test/CMakeFiles/zhuanzhi.dir/rule
 
 # fast build rule for target.
 zhuanzhi/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
 .PHONY : zhuanzhi/fast
 
 # Convenience name for target.
 test/CMakeFiles/NTdiedaifa.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTdiedaifa.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTdiedaifa.dir/rule
 .PHONY : test/CMakeFiles/NTdiedaifa.dir/rule
 
 # Convenience name for target.
@@ -571,12 +571,12 @@ NTdiedaifa: test/CMakeFiles/NTdiedaifa.dir/rule
 
 # fast build rule for target.
 NTdiedaifa/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/build
 .PHONY : NTdiedaifa/fast
 
 # Convenience name for target.
 test/CMakeFiles/pi.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pi.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pi.dir/rule
 .PHONY : test/CMakeFiles/pi.dir/rule
 
 # Convenience name for target.
@@ -586,12 +586,12 @@ pi: test/CMakeFiles/pi.dir/rule
 
 # fast build rule for target.
 pi/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
 .PHONY : pi/fast
 
 # Convenience name for target.
 test/CMakeFiles/gys.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/gys.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/gys.dir/rule
 .PHONY : test/CMakeFiles/gys.dir/rule
 
 # Convenience name for target.
@@ -601,12 +601,12 @@ gys: test/CMakeFiles/gys.dir/rule
 
 # fast build rule for target.
 gys/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/build
 .PHONY : gys/fast
 
 # Convenience name for target.
 test/CMakeFiles/assign.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/assign.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/assign.dir/rule
 .PHONY : test/CMakeFiles/assign.dir/rule
 
 # Convenience name for target.
@@ -616,12 +616,12 @@ assign: test/CMakeFiles/assign.dir/rule
 
 # fast build rule for target.
 assign/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/build
 .PHONY : assign/fast
 
 # Convenience name for target.
 test/CMakeFiles/yuanta.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/yuanta.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/yuanta.dir/rule
 .PHONY : test/CMakeFiles/yuanta.dir/rule
 
 # Convenience name for target.
@@ -631,12 +631,12 @@ yuanta: test/CMakeFiles/yuanta.dir/rule
 
 # fast build rule for target.
 yuanta/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
 .PHONY : yuanta/fast
 
 # Convenience name for target.
 test/CMakeFiles/class.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class.dir/rule
 .PHONY : test/CMakeFiles/class.dir/rule
 
 # Convenience name for target.
@@ -646,12 +646,12 @@ class: test/CMakeFiles/class.dir/rule
 
 # fast build rule for target.
 class/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/build
 .PHONY : class/fast
 
 # Convenience name for target.
 test/CMakeFiles/equation.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation.dir/rule
 .PHONY : test/CMakeFiles/equation.dir/rule
 
 # Convenience name for target.
@@ -661,12 +661,12 @@ equation: test/CMakeFiles/equation.dir/rule
 
 # fast build rule for target.
 equation/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/build
 .PHONY : equation/fast
 
 # Convenience name for target.
 test/CMakeFiles/NTerfenfa.dir/rule:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTerfenfa.dir/rule
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTerfenfa.dir/rule
 .PHONY : test/CMakeFiles/NTerfenfa.dir/rule
 
 # Convenience name for target.
@@ -676,7 +676,7 @@ NTerfenfa: test/CMakeFiles/NTerfenfa.dir/rule
 
 # fast build rule for target.
 NTerfenfa/fast:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/build
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/build
 .PHONY : NTerfenfa/fast
 
 CGAL_test.o: CGAL_test.cpp.o
@@ -685,7 +685,7 @@ CGAL_test.o: CGAL_test.cpp.o
 
 # target to build an object file
 CGAL_test.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.o
 .PHONY : CGAL_test.cpp.o
 
 CGAL_test.i: CGAL_test.cpp.i
@@ -694,7 +694,7 @@ CGAL_test.i: CGAL_test.cpp.i
 
 # target to preprocess a source file
 CGAL_test.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.i
 .PHONY : CGAL_test.cpp.i
 
 CGAL_test.s: CGAL_test.cpp.s
@@ -703,7 +703,7 @@ CGAL_test.s: CGAL_test.cpp.s
 
 # target to generate assembly for a file
 CGAL_test.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
 Fibonacci.o: Fibonacci.cpp.o
@@ -712,7 +712,7 @@ Fibonacci.o: Fibonacci.cpp.o
 
 # target to build an object file
 Fibonacci.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.o
 .PHONY : Fibonacci.cpp.o
 
 Fibonacci.i: Fibonacci.cpp.i
@@ -721,7 +721,7 @@ Fibonacci.i: Fibonacci.cpp.i
 
 # target to preprocess a source file
 Fibonacci.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.i
 .PHONY : Fibonacci.cpp.i
 
 Fibonacci.s: Fibonacci.cpp.s
@@ -730,7 +730,7 @@ Fibonacci.s: Fibonacci.cpp.s
 
 # target to generate assembly for a file
 Fibonacci.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/Fibonacci.cpp.s
 .PHONY : Fibonacci.cpp.s
 
 Helloworld.o: Helloworld.cpp.o
@@ -739,7 +739,7 @@ Helloworld.o: Helloworld.cpp.o
 
 # target to build an object file
 Helloworld.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.o
 .PHONY : Helloworld.cpp.o
 
 Helloworld.i: Helloworld.cpp.i
@@ -748,7 +748,7 @@ Helloworld.i: Helloworld.cpp.i
 
 # target to preprocess a source file
 Helloworld.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.i
 .PHONY : Helloworld.cpp.i
 
 Helloworld.s: Helloworld.cpp.s
@@ -757,7 +757,7 @@ Helloworld.s: Helloworld.cpp.s
 
 # target to generate assembly for a file
 Helloworld.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/Helloworld.cpp.s
 .PHONY : Helloworld.cpp.s
 
 Max.o: Max.c.o
@@ -766,7 +766,7 @@ Max.o: Max.c.o
 
 # target to build an object file
 Max.c.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.o
 .PHONY : Max.c.o
 
 Max.i: Max.c.i
@@ -775,7 +775,7 @@ Max.i: Max.c.i
 
 # target to preprocess a source file
 Max.c.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.i
 .PHONY : Max.c.i
 
 Max.s: Max.c.s
@@ -784,7 +784,7 @@ Max.s: Max.c.s
 
 # target to generate assembly for a file
 Max.c.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/Max.c.s
 .PHONY : Max.c.s
 
 NTdiedaifa.o: NTdiedaifa.cpp.o
@@ -793,7 +793,7 @@ NTdiedaifa.o: NTdiedaifa.cpp.o
 
 # target to build an object file
 NTdiedaifa.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.o
 .PHONY : NTdiedaifa.cpp.o
 
 NTdiedaifa.i: NTdiedaifa.cpp.i
@@ -802,7 +802,7 @@ NTdiedaifa.i: NTdiedaifa.cpp.i
 
 # target to preprocess a source file
 NTdiedaifa.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.i
 .PHONY : NTdiedaifa.cpp.i
 
 NTdiedaifa.s: NTdiedaifa.cpp.s
@@ -811,7 +811,7 @@ NTdiedaifa.s: NTdiedaifa.cpp.s
 
 # target to generate assembly for a file
 NTdiedaifa.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.s
 .PHONY : NTdiedaifa.cpp.s
 
 NTerfenfa.o: NTerfenfa.cpp.o
@@ -820,7 +820,7 @@ NTerfenfa.o: NTerfenfa.cpp.o
 
 # target to build an object file
 NTerfenfa.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.o
 .PHONY : NTerfenfa.cpp.o
 
 NTerfenfa.i: NTerfenfa.cpp.i
@@ -829,7 +829,7 @@ NTerfenfa.i: NTerfenfa.cpp.i
 
 # target to preprocess a source file
 NTerfenfa.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.i
 .PHONY : NTerfenfa.cpp.i
 
 NTerfenfa.s: NTerfenfa.cpp.s
@@ -838,7 +838,7 @@ NTerfenfa.s: NTerfenfa.cpp.s
 
 # target to generate assembly for a file
 NTerfenfa.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/NTerfenfa.cpp.s
 .PHONY : NTerfenfa.cpp.s
 
 Sum.o: Sum.c.o
@@ -847,7 +847,7 @@ Sum.o: Sum.c.o
 
 # target to build an object file
 Sum.c.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.o
 .PHONY : Sum.c.o
 
 Sum.i: Sum.c.i
@@ -856,7 +856,7 @@ Sum.i: Sum.c.i
 
 # target to preprocess a source file
 Sum.c.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.i
 .PHONY : Sum.c.i
 
 Sum.s: Sum.c.s
@@ -865,7 +865,7 @@ Sum.s: Sum.c.s
 
 # target to generate assembly for a file
 Sum.c.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/Sum.c.s
 .PHONY : Sum.c.s
 
 assign.o: assign.cpp.o
@@ -874,7 +874,7 @@ assign.o: assign.cpp.o
 
 # target to build an object file
 assign.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.o
 .PHONY : assign.cpp.o
 
 assign.i: assign.cpp.i
@@ -883,7 +883,7 @@ assign.i: assign.cpp.i
 
 # target to preprocess a source file
 assign.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.i
 .PHONY : assign.cpp.i
 
 assign.s: assign.cpp.s
@@ -892,7 +892,7 @@ assign.s: assign.cpp.s
 
 # target to generate assembly for a file
 assign.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/assign.cpp.s
 .PHONY : assign.cpp.s
 
 class.o: class.cpp.o
@@ -901,7 +901,7 @@ class.o: class.cpp.o
 
 # target to build an object file
 class.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.o
 .PHONY : class.cpp.o
 
 class.i: class.cpp.i
@@ -910,7 +910,7 @@ class.i: class.cpp.i
 
 # target to preprocess a source file
 class.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.i
 .PHONY : class.cpp.i
 
 class.s: class.cpp.s
@@ -919,7 +919,7 @@ class.s: class.cpp.s
 
 # target to generate assembly for a file
 class.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/class.cpp.s
 .PHONY : class.cpp.s
 
 convert.o: convert.cpp.o
@@ -928,7 +928,7 @@ convert.o: convert.cpp.o
 
 # target to build an object file
 convert.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.o
 .PHONY : convert.cpp.o
 
 convert.i: convert.cpp.i
@@ -937,7 +937,7 @@ convert.i: convert.cpp.i
 
 # target to preprocess a source file
 convert.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.i
 .PHONY : convert.cpp.i
 
 convert.s: convert.cpp.s
@@ -946,7 +946,7 @@ convert.s: convert.cpp.s
 
 # target to generate assembly for a file
 convert.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/convert.cpp.s
 .PHONY : convert.cpp.s
 
 equation.o: equation.cpp.o
@@ -955,7 +955,7 @@ equation.o: equation.cpp.o
 
 # target to build an object file
 equation.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.o
 .PHONY : equation.cpp.o
 
 equation.i: equation.cpp.i
@@ -964,7 +964,7 @@ equation.i: equation.cpp.i
 
 # target to preprocess a source file
 equation.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.i
 .PHONY : equation.cpp.i
 
 equation.s: equation.cpp.s
@@ -973,7 +973,7 @@ equation.s: equation.cpp.s
 
 # target to generate assembly for a file
 equation.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/equation.cpp.s
 .PHONY : equation.cpp.s
 
 equation1.o: equation1.cpp.o
@@ -982,7 +982,7 @@ equation1.o: equation1.cpp.o
 
 # target to build an object file
 equation1.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.o
 .PHONY : equation1.cpp.o
 
 equation1.i: equation1.cpp.i
@@ -991,7 +991,7 @@ equation1.i: equation1.cpp.i
 
 # target to preprocess a source file
 equation1.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.i
 .PHONY : equation1.cpp.i
 
 equation1.s: equation1.cpp.s
@@ -1000,7 +1000,7 @@ equation1.s: equation1.cpp.s
 
 # target to generate assembly for a file
 equation1.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/equation1.cpp.s
 .PHONY : equation1.cpp.s
 
 erfenfa.o: erfenfa.cpp.o
@@ -1009,7 +1009,7 @@ erfenfa.o: erfenfa.cpp.o
 
 # target to build an object file
 erfenfa.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.o
 .PHONY : erfenfa.cpp.o
 
 erfenfa.i: erfenfa.cpp.i
@@ -1018,7 +1018,7 @@ erfenfa.i: erfenfa.cpp.i
 
 # target to preprocess a source file
 erfenfa.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.i
 .PHONY : erfenfa.cpp.i
 
 erfenfa.s: erfenfa.cpp.s
@@ -1027,7 +1027,7 @@ erfenfa.s: erfenfa.cpp.s
 
 # target to generate assembly for a file
 erfenfa.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/erfenfa.cpp.s
 .PHONY : erfenfa.cpp.s
 
 gys.o: gys.cpp.o
@@ -1036,7 +1036,7 @@ gys.o: gys.cpp.o
 
 # target to build an object file
 gys.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.o
 .PHONY : gys.cpp.o
 
 gys.i: gys.cpp.i
@@ -1045,7 +1045,7 @@ gys.i: gys.cpp.i
 
 # target to preprocess a source file
 gys.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.i
 .PHONY : gys.cpp.i
 
 gys.s: gys.cpp.s
@@ -1054,7 +1054,7 @@ gys.s: gys.cpp.s
 
 # target to generate assembly for a file
 gys.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/gys.cpp.s
 .PHONY : gys.cpp.s
 
 if_else.o: if_else.cpp.o
@@ -1063,7 +1063,7 @@ if_else.o: if_else.cpp.o
 
 # target to build an object file
 if_else.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.o
 .PHONY : if_else.cpp.o
 
 if_else.i: if_else.cpp.i
@@ -1072,7 +1072,7 @@ if_else.i: if_else.cpp.i
 
 # target to preprocess a source file
 if_else.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.i
 .PHONY : if_else.cpp.i
 
 if_else.s: if_else.cpp.s
@@ -1081,7 +1081,7 @@ if_else.s: if_else.cpp.s
 
 # target to generate assembly for a file
 if_else.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/if_else.cpp.s
 .PHONY : if_else.cpp.s
 
 jc1.o: jc1.cpp.o
@@ -1090,7 +1090,7 @@ jc1.o: jc1.cpp.o
 
 # target to build an object file
 jc1.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.o
 .PHONY : jc1.cpp.o
 
 jc1.i: jc1.cpp.i
@@ -1099,7 +1099,7 @@ jc1.i: jc1.cpp.i
 
 # target to preprocess a source file
 jc1.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.i
 .PHONY : jc1.cpp.i
 
 jc1.s: jc1.cpp.s
@@ -1108,7 +1108,7 @@ jc1.s: jc1.cpp.s
 
 # target to generate assembly for a file
 jc1.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/jc1.cpp.s
 .PHONY : jc1.cpp.s
 
 jiecheng.o: jiecheng.cpp.o
@@ -1117,7 +1117,7 @@ jiecheng.o: jiecheng.cpp.o
 
 # target to build an object file
 jiecheng.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.o
 .PHONY : jiecheng.cpp.o
 
 jiecheng.i: jiecheng.cpp.i
@@ -1126,7 +1126,7 @@ jiecheng.i: jiecheng.cpp.i
 
 # target to preprocess a source file
 jiecheng.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.i
 .PHONY : jiecheng.cpp.i
 
 jiecheng.s: jiecheng.cpp.s
@@ -1135,7 +1135,7 @@ jiecheng.s: jiecheng.cpp.s
 
 # target to generate assembly for a file
 jiecheng.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.s
 .PHONY : jiecheng.cpp.s
 
 main.o: main.cpp.o
@@ -1144,7 +1144,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -1153,7 +1153,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -1162,7 +1162,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 math1.o: math1.cpp.o
@@ -1171,7 +1171,7 @@ math1.o: math1.cpp.o
 
 # target to build an object file
 math1.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.o
 .PHONY : math1.cpp.o
 
 math1.i: math1.cpp.i
@@ -1180,7 +1180,7 @@ math1.i: math1.cpp.i
 
 # target to preprocess a source file
 math1.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.i
 .PHONY : math1.cpp.i
 
 math1.s: math1.cpp.s
@@ -1189,7 +1189,7 @@ math1.s: math1.cpp.s
 
 # target to generate assembly for a file
 math1.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/math1.cpp.s
 .PHONY : math1.cpp.s
 
 max-jz.o: max-jz.cpp.o
@@ -1198,7 +1198,7 @@ max-jz.o: max-jz.cpp.o
 
 # target to build an object file
 max-jz.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.o
 .PHONY : max-jz.cpp.o
 
 max-jz.i: max-jz.cpp.i
@@ -1207,7 +1207,7 @@ max-jz.i: max-jz.cpp.i
 
 # target to preprocess a source file
 max-jz.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.i
 .PHONY : max-jz.cpp.i
 
 max-jz.s: max-jz.cpp.s
@@ -1216,7 +1216,7 @@ max-jz.s: max-jz.cpp.s
 
 # target to generate assembly for a file
 max-jz.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/max-jz.cpp.s
 .PHONY : max-jz.cpp.s
 
 max.o: max.cpp.o
@@ -1225,7 +1225,7 @@ max.o: max.cpp.o
 
 # target to build an object file
 max.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.o
 .PHONY : max.cpp.o
 
 max.i: max.cpp.i
@@ -1234,7 +1234,7 @@ max.i: max.cpp.i
 
 # target to preprocess a source file
 max.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.i
 .PHONY : max.cpp.i
 
 max.s: max.cpp.s
@@ -1243,7 +1243,7 @@ max.s: max.cpp.s
 
 # target to generate assembly for a file
 max.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.s
 .PHONY : max.cpp.s
 
 paixu.o: paixu.cpp.o
@@ -1252,7 +1252,7 @@ paixu.o: paixu.cpp.o
 
 # target to build an object file
 paixu.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.o
 .PHONY : paixu.cpp.o
 
 paixu.i: paixu.cpp.i
@@ -1261,7 +1261,7 @@ paixu.i: paixu.cpp.i
 
 # target to preprocess a source file
 paixu.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.i
 .PHONY : paixu.cpp.i
 
 paixu.s: paixu.cpp.s
@@ -1270,7 +1270,7 @@ paixu.s: paixu.cpp.s
 
 # target to generate assembly for a file
 paixu.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/paixu.cpp.s
 .PHONY : paixu.cpp.s
 
 pi.o: pi.cpp.o
@@ -1279,7 +1279,7 @@ pi.o: pi.cpp.o
 
 # target to build an object file
 pi.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.o
 .PHONY : pi.cpp.o
 
 pi.i: pi.cpp.i
@@ -1288,7 +1288,7 @@ pi.i: pi.cpp.i
 
 # target to preprocess a source file
 pi.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.i
 .PHONY : pi.cpp.i
 
 pi.s: pi.cpp.s
@@ -1297,7 +1297,7 @@ pi.s: pi.cpp.s
 
 # target to generate assembly for a file
 pi.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/pi.cpp.s
 .PHONY : pi.cpp.s
 
 qdxs.o: qdxs.cpp.o
@@ -1306,7 +1306,7 @@ qdxs.o: qdxs.cpp.o
 
 # target to build an object file
 qdxs.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.o
 .PHONY : qdxs.cpp.o
 
 qdxs.i: qdxs.cpp.i
@@ -1315,7 +1315,7 @@ qdxs.i: qdxs.cpp.i
 
 # target to preprocess a source file
 qdxs.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.i
 .PHONY : qdxs.cpp.i
 
 qdxs.s: qdxs.cpp.s
@@ -1324,7 +1324,7 @@ qdxs.s: qdxs.cpp.s
 
 # target to generate assembly for a file
 qdxs.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/qdxs.cpp.s
 .PHONY : qdxs.cpp.s
 
 shuixhs.o: shuixhs.cpp.o
@@ -1333,7 +1333,7 @@ shuixhs.o: shuixhs.cpp.o
 
 # target to build an object file
 shuixhs.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.o
 .PHONY : shuixhs.cpp.o
 
 shuixhs.i: shuixhs.cpp.i
@@ -1342,7 +1342,7 @@ shuixhs.i: shuixhs.cpp.i
 
 # target to preprocess a source file
 shuixhs.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.i
 .PHONY : shuixhs.cpp.i
 
 shuixhs.s: shuixhs.cpp.s
@@ -1351,7 +1351,7 @@ shuixhs.s: shuixhs.cpp.s
 
 # target to generate assembly for a file
 shuixhs.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/shuixhs.cpp.s
 .PHONY : shuixhs.cpp.s
 
 sm2.o: sm2.cpp.o
@@ -1360,7 +1360,7 @@ sm2.o: sm2.cpp.o
 
 # target to build an object file
 sm2.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.o
 .PHONY : sm2.cpp.o
 
 sm2.i: sm2.cpp.i
@@ -1369,7 +1369,7 @@ sm2.i: sm2.cpp.i
 
 # target to preprocess a source file
 sm2.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.i
 .PHONY : sm2.cpp.i
 
 sm2.s: sm2.cpp.s
@@ -1378,7 +1378,7 @@ sm2.s: sm2.cpp.s
 
 # target to generate assembly for a file
 sm2.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.s
 .PHONY : sm2.cpp.s
 
 sqr.o: sqr.cpp.o
@@ -1387,7 +1387,7 @@ sqr.o: sqr.cpp.o
 
 # target to build an object file
 sqr.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.o
 .PHONY : sqr.cpp.o
 
 sqr.i: sqr.cpp.i
@@ -1396,7 +1396,7 @@ sqr.i: sqr.cpp.i
 
 # target to preprocess a source file
 sqr.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.i
 .PHONY : sqr.cpp.i
 
 sqr.s: sqr.cpp.s
@@ -1405,7 +1405,7 @@ sqr.s: sqr.cpp.s
 
 # target to generate assembly for a file
 sqr.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/sqr.cpp.s
 .PHONY : sqr.cpp.s
 
 struct.o: struct.cpp.o
@@ -1414,7 +1414,7 @@ struct.o: struct.cpp.o
 
 # target to build an object file
 struct.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.o
 .PHONY : struct.cpp.o
 
 struct.i: struct.cpp.i
@@ -1423,7 +1423,7 @@ struct.i: struct.cpp.i
 
 # target to preprocess a source file
 struct.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.i
 .PHONY : struct.cpp.i
 
 struct.s: struct.cpp.s
@@ -1432,7 +1432,7 @@ struct.s: struct.cpp.s
 
 # target to generate assembly for a file
 struct.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/struct.cpp.s
 .PHONY : struct.cpp.s
 
 sum1.o: sum1.cpp.o
@@ -1441,7 +1441,7 @@ sum1.o: sum1.cpp.o
 
 # target to build an object file
 sum1.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.o
 .PHONY : sum1.cpp.o
 
 sum1.i: sum1.cpp.i
@@ -1450,7 +1450,7 @@ sum1.i: sum1.cpp.i
 
 # target to preprocess a source file
 sum1.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.i
 .PHONY : sum1.cpp.i
 
 sum1.s: sum1.cpp.s
@@ -1459,7 +1459,7 @@ sum1.s: sum1.cpp.s
 
 # target to generate assembly for a file
 sum1.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/sum1.cpp.s
 .PHONY : sum1.cpp.s
 
 sushu.o: sushu.cpp.o
@@ -1468,7 +1468,7 @@ sushu.o: sushu.cpp.o
 
 # target to build an object file
 sushu.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.o
 .PHONY : sushu.cpp.o
 
 sushu.i: sushu.cpp.i
@@ -1477,7 +1477,7 @@ sushu.i: sushu.cpp.i
 
 # target to preprocess a source file
 sushu.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.i
 .PHONY : sushu.cpp.i
 
 sushu.s: sushu.cpp.s
@@ -1486,7 +1486,7 @@ sushu.s: sushu.cpp.s
 
 # target to generate assembly for a file
 sushu.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/sushu.cpp.s
 .PHONY : sushu.cpp.s
 
 tuan.o: tuan.cpp.o
@@ -1495,7 +1495,7 @@ tuan.o: tuan.cpp.o
 
 # target to build an object file
 tuan.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.o
 .PHONY : tuan.cpp.o
 
 tuan.i: tuan.cpp.i
@@ -1504,7 +1504,7 @@ tuan.i: tuan.cpp.i
 
 # target to preprocess a source file
 tuan.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.i
 .PHONY : tuan.cpp.i
 
 tuan.s: tuan.cpp.s
@@ -1513,7 +1513,7 @@ tuan.s: tuan.cpp.s
 
 # target to generate assembly for a file
 tuan.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/tuan.cpp.s
 .PHONY : tuan.cpp.s
 
 yuanta.o: yuanta.cpp.o
@@ -1522,7 +1522,7 @@ yuanta.o: yuanta.cpp.o
 
 # target to build an object file
 yuanta.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.o
 .PHONY : yuanta.cpp.o
 
 yuanta.i: yuanta.cpp.i
@@ -1531,7 +1531,7 @@ yuanta.i: yuanta.cpp.i
 
 # target to preprocess a source file
 yuanta.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.i
 .PHONY : yuanta.cpp.i
 
 yuanta.s: yuanta.cpp.s
@@ -1540,7 +1540,7 @@ yuanta.s: yuanta.cpp.s
 
 # target to generate assembly for a file
 yuanta.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/yuanta.cpp.s
 .PHONY : yuanta.cpp.s
 
 zhengchu.o: zhengchu.cpp.o
@@ -1549,7 +1549,7 @@ zhengchu.o: zhengchu.cpp.o
 
 # target to build an object file
 zhengchu.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.o
 .PHONY : zhengchu.cpp.o
 
 zhengchu.i: zhengchu.cpp.i
@@ -1558,7 +1558,7 @@ zhengchu.i: zhengchu.cpp.i
 
 # target to preprocess a source file
 zhengchu.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.i
 .PHONY : zhengchu.cpp.i
 
 zhengchu.s: zhengchu.cpp.s
@@ -1567,7 +1567,7 @@ zhengchu.s: zhengchu.cpp.s
 
 # target to generate assembly for a file
 zhengchu.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/zhengchu.cpp.s
 .PHONY : zhengchu.cpp.s
 
 zhizhen.o: zhizhen.cpp.o
@@ -1576,7 +1576,7 @@ zhizhen.o: zhizhen.cpp.o
 
 # target to build an object file
 zhizhen.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.o
 .PHONY : zhizhen.cpp.o
 
 zhizhen.i: zhizhen.cpp.i
@@ -1585,7 +1585,7 @@ zhizhen.i: zhizhen.cpp.i
 
 # target to preprocess a source file
 zhizhen.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.i
 .PHONY : zhizhen.cpp.i
 
 zhizhen.s: zhizhen.cpp.s
@@ -1594,7 +1594,7 @@ zhizhen.s: zhizhen.cpp.s
 
 # target to generate assembly for a file
 zhizhen.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/zhizhen.cpp.s
 .PHONY : zhizhen.cpp.s
 
 zhuanzhi.o: zhuanzhi.cpp.o
@@ -1603,7 +1603,7 @@ zhuanzhi.o: zhuanzhi.cpp.o
 
 # target to build an object file
 zhuanzhi.cpp.o:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.o
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.o
 .PHONY : zhuanzhi.cpp.o
 
 zhuanzhi.i: zhuanzhi.cpp.i
@@ -1612,7 +1612,7 @@ zhuanzhi.i: zhuanzhi.cpp.i
 
 # target to preprocess a source file
 zhuanzhi.cpp.i:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.i
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.i
 .PHONY : zhuanzhi.cpp.i
 
 zhuanzhi.s: zhuanzhi.cpp.s
@@ -1621,7 +1621,7 @@ zhuanzhi.s: zhuanzhi.cpp.s
 
 # target to generate assembly for a file
 zhuanzhi.cpp.s:
-	cd /home/xuming/repository/xuming_study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.s
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/zhuanzhi.cpp.s
 .PHONY : zhuanzhi.cpp.s
 
 # Help Target
@@ -1787,6 +1787,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/xuming/repository/xuming_study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xm/repository/xm-study/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

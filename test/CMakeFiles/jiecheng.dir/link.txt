@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/jiecheng.dir/jiecheng.o  -o jiecheng -rdynamic 

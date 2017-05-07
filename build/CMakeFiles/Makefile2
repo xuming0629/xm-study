@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuming/repository/xuming_study
+CMAKE_SOURCE_DIR = /home/xm/repository/xm-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuming/repository/xuming_study/build
+CMAKE_BINARY_DIR = /home/xm/repository/xm-study/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -170,7 +170,7 @@ test/preinstall:
 test/CMakeFiles/struct.dir/all:
 	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/depend
 	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=55,56 "Built target struct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=55,56 "Built target struct"
 .PHONY : test/CMakeFiles/struct.dir/all
 
 # Include target in all.
@@ -180,9 +180,9 @@ all: test/CMakeFiles/struct.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/struct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/struct.dir/rule
 
 # Convenience name for target.
@@ -207,7 +207,7 @@ clean: test/CMakeFiles/struct.dir/clean
 test/CMakeFiles/if_else.dir/all:
 	$(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/depend
 	$(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=29,30 "Built target if_else"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=29,30 "Built target if_else"
 .PHONY : test/CMakeFiles/if_else.dir/all
 
 # Include target in all.
@@ -217,9 +217,9 @@ all: test/CMakeFiles/if_else.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/if_else.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/if_else.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/if_else.dir/rule
 
 # Convenience name for target.
@@ -244,7 +244,7 @@ clean: test/CMakeFiles/if_else.dir/clean
 test/CMakeFiles/Sum.dir/all:
 	$(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/depend
 	$(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=13,14 "Built target Sum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=13,14 "Built target Sum"
 .PHONY : test/CMakeFiles/Sum.dir/all
 
 # Include target in all.
@@ -254,9 +254,9 @@ all: test/CMakeFiles/Sum.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Sum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Sum.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Sum.dir/rule
 
 # Convenience name for target.
@@ -281,7 +281,7 @@ clean: test/CMakeFiles/Sum.dir/clean
 test/CMakeFiles/Max.dir/all:
 	$(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/depend
 	$(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=7,8 "Built target Max"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=7,8 "Built target Max"
 .PHONY : test/CMakeFiles/Max.dir/all
 
 # Include target in all.
@@ -291,9 +291,9 @@ all: test/CMakeFiles/Max.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Max.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Max.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Max.dir/rule
 
 # Convenience name for target.
@@ -318,7 +318,7 @@ clean: test/CMakeFiles/Max.dir/clean
 test/CMakeFiles/sm2.dir/all:
 	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/depend
 	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=51,52 "Built target sm2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=51,52 "Built target sm2"
 .PHONY : test/CMakeFiles/sm2.dir/all
 
 # Include target in all.
@@ -328,9 +328,9 @@ all: test/CMakeFiles/sm2.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/sm2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sm2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/sm2.dir/rule
 
 # Convenience name for target.
@@ -355,7 +355,7 @@ clean: test/CMakeFiles/sm2.dir/clean
 test/CMakeFiles/zhizhen.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=67,68 "Built target zhizhen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=67,68 "Built target zhizhen"
 .PHONY : test/CMakeFiles/zhizhen.dir/all
 
 # Include target in all.
@@ -365,9 +365,9 @@ all: test/CMakeFiles/zhizhen.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/zhizhen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhizhen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/zhizhen.dir/rule
 
 # Convenience name for target.
@@ -392,7 +392,7 @@ clean: test/CMakeFiles/zhizhen.dir/clean
 test/CMakeFiles/convert.dir/all:
 	$(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/depend
 	$(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=19,20 "Built target convert"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=19,20 "Built target convert"
 .PHONY : test/CMakeFiles/convert.dir/all
 
 # Include target in all.
@@ -402,9 +402,9 @@ all: test/CMakeFiles/convert.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/convert.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/convert.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/convert.dir/rule
 
 # Convenience name for target.
@@ -429,7 +429,7 @@ clean: test/CMakeFiles/convert.dir/clean
 test/CMakeFiles/equation1.dir/all:
 	$(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/depend
 	$(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=23,24 "Built target equation1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=23,24 "Built target equation1"
 .PHONY : test/CMakeFiles/equation1.dir/all
 
 # Include target in all.
@@ -439,9 +439,9 @@ all: test/CMakeFiles/equation1.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/equation1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/equation1.dir/rule
 
 # Convenience name for target.
@@ -466,7 +466,7 @@ clean: test/CMakeFiles/equation1.dir/clean
 test/CMakeFiles/sushu.dir/all:
 	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/depend
 	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=59,60 "Built target sushu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=59,60 "Built target sushu"
 .PHONY : test/CMakeFiles/sushu.dir/all
 
 # Include target in all.
@@ -476,9 +476,9 @@ all: test/CMakeFiles/sushu.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/sushu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sushu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/sushu.dir/rule
 
 # Convenience name for target.
@@ -503,7 +503,7 @@ clean: test/CMakeFiles/sushu.dir/clean
 test/CMakeFiles/zhengchu.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=65,66 "Built target zhengchu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=65,66 "Built target zhengchu"
 .PHONY : test/CMakeFiles/zhengchu.dir/all
 
 # Include target in all.
@@ -513,9 +513,9 @@ all: test/CMakeFiles/zhengchu.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/zhengchu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhengchu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/zhengchu.dir/rule
 
 # Convenience name for target.
@@ -540,7 +540,7 @@ clean: test/CMakeFiles/zhengchu.dir/clean
 test/CMakeFiles/jiecheng.dir/all:
 	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/depend
 	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=33,34 "Built target jiecheng"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=33,34 "Built target jiecheng"
 .PHONY : test/CMakeFiles/jiecheng.dir/all
 
 # Include target in all.
@@ -550,9 +550,9 @@ all: test/CMakeFiles/jiecheng.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/jiecheng.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jiecheng.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/jiecheng.dir/rule
 
 # Convenience name for target.
@@ -577,7 +577,7 @@ clean: test/CMakeFiles/jiecheng.dir/clean
 test/CMakeFiles/qdxs.dir/all:
 	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/depend
 	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=47,48 "Built target qdxs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=47,48 "Built target qdxs"
 .PHONY : test/CMakeFiles/qdxs.dir/all
 
 # Include target in all.
@@ -587,9 +587,9 @@ all: test/CMakeFiles/qdxs.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/qdxs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/qdxs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/qdxs.dir/rule
 
 # Convenience name for target.
@@ -614,7 +614,7 @@ clean: test/CMakeFiles/qdxs.dir/clean
 test/CMakeFiles/paixu.dir/all:
 	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/depend
 	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=43,44 "Built target paixu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=43,44 "Built target paixu"
 .PHONY : test/CMakeFiles/paixu.dir/all
 
 # Include target in all.
@@ -624,9 +624,9 @@ all: test/CMakeFiles/paixu.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/paixu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/paixu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/paixu.dir/rule
 
 # Convenience name for target.
@@ -651,7 +651,7 @@ clean: test/CMakeFiles/paixu.dir/clean
 test/CMakeFiles/Helloworld.dir/all:
 	$(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/depend
 	$(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=5,6 "Built target Helloworld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=5,6 "Built target Helloworld"
 .PHONY : test/CMakeFiles/Helloworld.dir/all
 
 # Include target in all.
@@ -661,9 +661,9 @@ all: test/CMakeFiles/Helloworld.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Helloworld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Helloworld.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Helloworld.dir/rule
 
 # Convenience name for target.
@@ -688,7 +688,7 @@ clean: test/CMakeFiles/Helloworld.dir/clean
 test/CMakeFiles/max-jz.dir/all:
 	$(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/depend
 	$(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=41,42 "Built target max-jz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=41,42 "Built target max-jz"
 .PHONY : test/CMakeFiles/max-jz.dir/all
 
 # Include target in all.
@@ -698,9 +698,9 @@ all: test/CMakeFiles/max-jz.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/max-jz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max-jz.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/max-jz.dir/rule
 
 # Convenience name for target.
@@ -725,7 +725,7 @@ clean: test/CMakeFiles/max-jz.dir/clean
 test/CMakeFiles/math1.dir/all:
 	$(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/depend
 	$(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=37,38 "Built target math1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=37,38 "Built target math1"
 .PHONY : test/CMakeFiles/math1.dir/all
 
 # Include target in all.
@@ -735,9 +735,9 @@ all: test/CMakeFiles/math1.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/math1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/math1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/math1.dir/rule
 
 # Convenience name for target.
@@ -762,7 +762,7 @@ clean: test/CMakeFiles/math1.dir/clean
 test/CMakeFiles/CGAL_test.dir/all:
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/depend
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=1,2 "Built target CGAL_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=1,2 "Built target CGAL_test"
 .PHONY : test/CMakeFiles/CGAL_test.dir/all
 
 # Include target in all.
@@ -772,9 +772,9 @@ all: test/CMakeFiles/CGAL_test.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/CGAL_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/CGAL_test.dir/rule
 
 # Convenience name for target.
@@ -799,7 +799,7 @@ clean: test/CMakeFiles/CGAL_test.dir/clean
 test/CMakeFiles/sqr.dir/all:
 	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/depend
 	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=53,54 "Built target sqr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=53,54 "Built target sqr"
 .PHONY : test/CMakeFiles/sqr.dir/all
 
 # Include target in all.
@@ -809,9 +809,9 @@ all: test/CMakeFiles/sqr.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/sqr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sqr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/sqr.dir/rule
 
 # Convenience name for target.
@@ -836,7 +836,7 @@ clean: test/CMakeFiles/sqr.dir/clean
 test/CMakeFiles/tuan.dir/all:
 	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/depend
 	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=61,62 "Built target tuan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=61,62 "Built target tuan"
 .PHONY : test/CMakeFiles/tuan.dir/all
 
 # Include target in all.
@@ -846,9 +846,9 @@ all: test/CMakeFiles/tuan.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tuan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tuan.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tuan.dir/rule
 
 # Convenience name for target.
@@ -873,7 +873,7 @@ clean: test/CMakeFiles/tuan.dir/clean
 test/CMakeFiles/Fibonacci.dir/all:
 	$(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/depend
 	$(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=3,4 "Built target Fibonacci"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=3,4 "Built target Fibonacci"
 .PHONY : test/CMakeFiles/Fibonacci.dir/all
 
 # Include target in all.
@@ -883,9 +883,9 @@ all: test/CMakeFiles/Fibonacci.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Fibonacci.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Fibonacci.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Fibonacci.dir/rule
 
 # Convenience name for target.
@@ -910,7 +910,7 @@ clean: test/CMakeFiles/Fibonacci.dir/clean
 test/CMakeFiles/jc1.dir/all:
 	$(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/depend
 	$(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=31,32 "Built target jc1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=31,32 "Built target jc1"
 .PHONY : test/CMakeFiles/jc1.dir/all
 
 # Include target in all.
@@ -920,9 +920,9 @@ all: test/CMakeFiles/jc1.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/jc1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jc1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/jc1.dir/rule
 
 # Convenience name for target.
@@ -947,7 +947,7 @@ clean: test/CMakeFiles/jc1.dir/clean
 test/CMakeFiles/main.dir/all:
 	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/depend
 	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=35,36 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=35,36 "Built target main"
 .PHONY : test/CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -957,9 +957,9 @@ all: test/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -984,7 +984,7 @@ clean: test/CMakeFiles/main.dir/clean
 test/CMakeFiles/erfenfa.dir/all:
 	$(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/depend
 	$(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=25,26 "Built target erfenfa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=25,26 "Built target erfenfa"
 .PHONY : test/CMakeFiles/erfenfa.dir/all
 
 # Include target in all.
@@ -994,9 +994,9 @@ all: test/CMakeFiles/erfenfa.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/erfenfa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/erfenfa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/erfenfa.dir/rule
 
 # Convenience name for target.
@@ -1021,7 +1021,7 @@ clean: test/CMakeFiles/erfenfa.dir/clean
 test/CMakeFiles/shuixhs.dir/all:
 	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/depend
 	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=49,50 "Built target shuixhs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=49,50 "Built target shuixhs"
 .PHONY : test/CMakeFiles/shuixhs.dir/all
 
 # Include target in all.
@@ -1031,9 +1031,9 @@ all: test/CMakeFiles/shuixhs.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/shuixhs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/shuixhs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/shuixhs.dir/rule
 
 # Convenience name for target.
@@ -1058,7 +1058,7 @@ clean: test/CMakeFiles/shuixhs.dir/clean
 test/CMakeFiles/sum1.dir/all:
 	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/depend
 	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=57,58 "Built target sum1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=57,58 "Built target sum1"
 .PHONY : test/CMakeFiles/sum1.dir/all
 
 # Include target in all.
@@ -1068,9 +1068,9 @@ all: test/CMakeFiles/sum1.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/sum1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sum1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/sum1.dir/rule
 
 # Convenience name for target.
@@ -1095,7 +1095,7 @@ clean: test/CMakeFiles/sum1.dir/clean
 test/CMakeFiles/max.dir/all:
 	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/depend
 	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=39,40 "Built target max"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=39,40 "Built target max"
 .PHONY : test/CMakeFiles/max.dir/all
 
 # Include target in all.
@@ -1105,9 +1105,9 @@ all: test/CMakeFiles/max.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/max.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/max.dir/rule
 
 # Convenience name for target.
@@ -1132,7 +1132,7 @@ clean: test/CMakeFiles/max.dir/clean
 test/CMakeFiles/zhuanzhi.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=69,70 "Built target zhuanzhi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=69,70 "Built target zhuanzhi"
 .PHONY : test/CMakeFiles/zhuanzhi.dir/all
 
 # Include target in all.
@@ -1142,9 +1142,9 @@ all: test/CMakeFiles/zhuanzhi.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/zhuanzhi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhuanzhi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/zhuanzhi.dir/rule
 
 # Convenience name for target.
@@ -1169,7 +1169,7 @@ clean: test/CMakeFiles/zhuanzhi.dir/clean
 test/CMakeFiles/NTdiedaifa.dir/all:
 	$(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/depend
 	$(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=9,10 "Built target NTdiedaifa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=9,10 "Built target NTdiedaifa"
 .PHONY : test/CMakeFiles/NTdiedaifa.dir/all
 
 # Include target in all.
@@ -1179,9 +1179,9 @@ all: test/CMakeFiles/NTdiedaifa.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/NTdiedaifa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTdiedaifa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/NTdiedaifa.dir/rule
 
 # Convenience name for target.
@@ -1206,7 +1206,7 @@ clean: test/CMakeFiles/NTdiedaifa.dir/clean
 test/CMakeFiles/pi.dir/all:
 	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/depend
 	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=45,46 "Built target pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=45,46 "Built target pi"
 .PHONY : test/CMakeFiles/pi.dir/all
 
 # Include target in all.
@@ -1216,9 +1216,9 @@ all: test/CMakeFiles/pi.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/pi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/pi.dir/rule
 
 # Convenience name for target.
@@ -1243,7 +1243,7 @@ clean: test/CMakeFiles/pi.dir/clean
 test/CMakeFiles/gys.dir/all:
 	$(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/depend
 	$(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=27,28 "Built target gys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=27,28 "Built target gys"
 .PHONY : test/CMakeFiles/gys.dir/all
 
 # Include target in all.
@@ -1253,9 +1253,9 @@ all: test/CMakeFiles/gys.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/gys.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/gys.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/gys.dir/rule
 
 # Convenience name for target.
@@ -1280,7 +1280,7 @@ clean: test/CMakeFiles/gys.dir/clean
 test/CMakeFiles/assign.dir/all:
 	$(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/depend
 	$(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=15,16 "Built target assign"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=15,16 "Built target assign"
 .PHONY : test/CMakeFiles/assign.dir/all
 
 # Include target in all.
@@ -1290,9 +1290,9 @@ all: test/CMakeFiles/assign.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/assign.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/assign.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/assign.dir/rule
 
 # Convenience name for target.
@@ -1317,7 +1317,7 @@ clean: test/CMakeFiles/assign.dir/clean
 test/CMakeFiles/yuanta.dir/all:
 	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/depend
 	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=63,64 "Built target yuanta"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=63,64 "Built target yuanta"
 .PHONY : test/CMakeFiles/yuanta.dir/all
 
 # Include target in all.
@@ -1327,9 +1327,9 @@ all: test/CMakeFiles/yuanta.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/yuanta.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/yuanta.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/yuanta.dir/rule
 
 # Convenience name for target.
@@ -1354,7 +1354,7 @@ clean: test/CMakeFiles/yuanta.dir/clean
 test/CMakeFiles/class.dir/all:
 	$(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/depend
 	$(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=17,18 "Built target class"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=17,18 "Built target class"
 .PHONY : test/CMakeFiles/class.dir/all
 
 # Include target in all.
@@ -1364,9 +1364,9 @@ all: test/CMakeFiles/class.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/class.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/class.dir/rule
 
 # Convenience name for target.
@@ -1391,7 +1391,7 @@ clean: test/CMakeFiles/class.dir/clean
 test/CMakeFiles/equation.dir/all:
 	$(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/depend
 	$(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=21,22 "Built target equation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=21,22 "Built target equation"
 .PHONY : test/CMakeFiles/equation.dir/all
 
 # Include target in all.
@@ -1401,9 +1401,9 @@ all: test/CMakeFiles/equation.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/equation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/equation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/equation.dir/rule
 
 # Convenience name for target.
@@ -1428,7 +1428,7 @@ clean: test/CMakeFiles/equation.dir/clean
 test/CMakeFiles/NTerfenfa.dir/all:
 	$(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/depend
 	$(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuming/repository/xuming_study/build/CMakeFiles --progress-num=11,12 "Built target NTerfenfa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=11,12 "Built target NTerfenfa"
 .PHONY : test/CMakeFiles/NTerfenfa.dir/all
 
 # Include target in all.
@@ -1438,9 +1438,9 @@ all: test/CMakeFiles/NTerfenfa.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/NTerfenfa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/NTerfenfa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/NTerfenfa.dir/rule
 
 # Convenience name for target.

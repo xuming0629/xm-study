@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/juzhencheng.dir/juzhencheng.cpp.o  -o juzhencheng  -L/usr/local/lib -rdynamic 

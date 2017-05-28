@@ -155,6 +155,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named spheretest
+
+# Build rule for target.
+spheretest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spheretest
+.PHONY : spheretest
+
+# fast build rule for target.
+spheretest/fast:
+	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/build
+.PHONY : spheretest/fast
+
+#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -441,6 +454,19 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
+# Target rules for targets named name
+
+# Build rule for target.
+name: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 name
+.PHONY : name
+
+# fast build rule for target.
+name/fast:
+	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/build
+.PHONY : name/fast
+
+#=============================================================================
 # Target rules for targets named erfenfa
 
 # Build rule for target.
@@ -621,6 +647,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... spheretest"
 	@echo "... struct"
 	@echo "... if_else"
 	@echo "... Sum"
@@ -643,6 +670,7 @@ help:
 	@echo "... Fibonacci"
 	@echo "... jc1"
 	@echo "... main"
+	@echo "... name"
 	@echo "... erfenfa"
 	@echo "... shuixhs"
 	@echo "... sum1"

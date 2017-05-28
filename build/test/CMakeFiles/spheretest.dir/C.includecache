@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xm/repository/xm-study/test/spheretest.c
+math.h
+/home/xm/repository/xm-study/test/math.h
+stdio.h
+/home/xm/repository/xm-study/test/stdio.h
+stdlib.h
+/home/xm/repository/xm-study/test/stdlib.h
+time.h
+/home/xm/repository/xm-study/test/time.h
+fftw3.h
+/home/xm/repository/xm-study/test/fftw3.h
+string.h
+-
+direct.h
+-
+gauss_legendre.h
+/home/xm/repository/xm-study/test/gauss_legendre.h
+

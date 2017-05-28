@@ -81,6 +81,7 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/spheretest.dir/all
 test/all: test/CMakeFiles/struct.dir/all
 test/all: test/CMakeFiles/if_else.dir/all
 test/all: test/CMakeFiles/Sum.dir/all
@@ -103,6 +104,7 @@ test/all: test/CMakeFiles/tuan.dir/all
 test/all: test/CMakeFiles/Fibonacci.dir/all
 test/all: test/CMakeFiles/jc1.dir/all
 test/all: test/CMakeFiles/main.dir/all
+test/all: test/CMakeFiles/name.dir/all
 test/all: test/CMakeFiles/erfenfa.dir/all
 test/all: test/CMakeFiles/shuixhs.dir/all
 test/all: test/CMakeFiles/sum1.dir/all
@@ -120,6 +122,7 @@ test/all: test/CMakeFiles/NTerfenfa.dir/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/spheretest.dir/clean
 test/clean: test/CMakeFiles/struct.dir/clean
 test/clean: test/CMakeFiles/if_else.dir/clean
 test/clean: test/CMakeFiles/Sum.dir/clean
@@ -142,6 +145,7 @@ test/clean: test/CMakeFiles/tuan.dir/clean
 test/clean: test/CMakeFiles/Fibonacci.dir/clean
 test/clean: test/CMakeFiles/jc1.dir/clean
 test/clean: test/CMakeFiles/main.dir/clean
+test/clean: test/CMakeFiles/name.dir/clean
 test/clean: test/CMakeFiles/erfenfa.dir/clean
 test/clean: test/CMakeFiles/shuixhs.dir/clean
 test/clean: test/CMakeFiles/sum1.dir/clean
@@ -164,13 +168,50 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/spheretest.dir
+
+# All Build rule for target.
+test/CMakeFiles/spheretest.dir/all:
+	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/depend
+	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=55,56 "Built target spheretest"
+.PHONY : test/CMakeFiles/spheretest.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/spheretest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/spheretest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/spheretest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/spheretest.dir/rule
+
+# Convenience name for target.
+spheretest: test/CMakeFiles/spheretest.dir/rule
+
+.PHONY : spheretest
+
+# clean rule for target.
+test/CMakeFiles/spheretest.dir/clean:
+	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/clean
+.PHONY : test/CMakeFiles/spheretest.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/spheretest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/struct.dir
 
 # All Build rule for target.
 test/CMakeFiles/struct.dir/all:
 	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/depend
 	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=55,56 "Built target struct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=59,60 "Built target struct"
 .PHONY : test/CMakeFiles/struct.dir/all
 
 # Include target in all.
@@ -318,7 +359,7 @@ clean: test/CMakeFiles/Max.dir/clean
 test/CMakeFiles/sm2.dir/all:
 	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/depend
 	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=51,52 "Built target sm2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=53,54 "Built target sm2"
 .PHONY : test/CMakeFiles/sm2.dir/all
 
 # Include target in all.
@@ -355,7 +396,7 @@ clean: test/CMakeFiles/sm2.dir/clean
 test/CMakeFiles/zhizhen.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=67,68 "Built target zhizhen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=71,72 "Built target zhizhen"
 .PHONY : test/CMakeFiles/zhizhen.dir/all
 
 # Include target in all.
@@ -466,7 +507,7 @@ clean: test/CMakeFiles/equation1.dir/clean
 test/CMakeFiles/sushu.dir/all:
 	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/depend
 	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=59,60 "Built target sushu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=63,64 "Built target sushu"
 .PHONY : test/CMakeFiles/sushu.dir/all
 
 # Include target in all.
@@ -503,7 +544,7 @@ clean: test/CMakeFiles/sushu.dir/clean
 test/CMakeFiles/zhengchu.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=65,66 "Built target zhengchu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=69,70 "Built target zhengchu"
 .PHONY : test/CMakeFiles/zhengchu.dir/all
 
 # Include target in all.
@@ -577,7 +618,7 @@ clean: test/CMakeFiles/jiecheng.dir/clean
 test/CMakeFiles/qdxs.dir/all:
 	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/depend
 	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=47,48 "Built target qdxs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=49,50 "Built target qdxs"
 .PHONY : test/CMakeFiles/qdxs.dir/all
 
 # Include target in all.
@@ -614,7 +655,7 @@ clean: test/CMakeFiles/qdxs.dir/clean
 test/CMakeFiles/paixu.dir/all:
 	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/depend
 	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=43,44 "Built target paixu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=45,46 "Built target paixu"
 .PHONY : test/CMakeFiles/paixu.dir/all
 
 # Include target in all.
@@ -799,7 +840,7 @@ clean: test/CMakeFiles/CGAL_test.dir/clean
 test/CMakeFiles/sqr.dir/all:
 	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/depend
 	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=53,54 "Built target sqr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=57,58 "Built target sqr"
 .PHONY : test/CMakeFiles/sqr.dir/all
 
 # Include target in all.
@@ -836,7 +877,7 @@ clean: test/CMakeFiles/sqr.dir/clean
 test/CMakeFiles/tuan.dir/all:
 	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/depend
 	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=61,62 "Built target tuan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=65,66 "Built target tuan"
 .PHONY : test/CMakeFiles/tuan.dir/all
 
 # Include target in all.
@@ -978,6 +1019,43 @@ clean: test/CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/name.dir
+
+# All Build rule for target.
+test/CMakeFiles/name.dir/all:
+	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/depend
+	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=43,44 "Built target name"
+.PHONY : test/CMakeFiles/name.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/name.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/name.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/name.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/name.dir/rule
+
+# Convenience name for target.
+name: test/CMakeFiles/name.dir/rule
+
+.PHONY : name
+
+# clean rule for target.
+test/CMakeFiles/name.dir/clean:
+	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/clean
+.PHONY : test/CMakeFiles/name.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/name.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/erfenfa.dir
 
 # All Build rule for target.
@@ -1021,7 +1099,7 @@ clean: test/CMakeFiles/erfenfa.dir/clean
 test/CMakeFiles/shuixhs.dir/all:
 	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/depend
 	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=49,50 "Built target shuixhs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=51,52 "Built target shuixhs"
 .PHONY : test/CMakeFiles/shuixhs.dir/all
 
 # Include target in all.
@@ -1058,7 +1136,7 @@ clean: test/CMakeFiles/shuixhs.dir/clean
 test/CMakeFiles/sum1.dir/all:
 	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/depend
 	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=57,58 "Built target sum1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=61,62 "Built target sum1"
 .PHONY : test/CMakeFiles/sum1.dir/all
 
 # Include target in all.
@@ -1132,7 +1210,7 @@ clean: test/CMakeFiles/max.dir/clean
 test/CMakeFiles/zhuanzhi.dir/all:
 	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/depend
 	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=69,70 "Built target zhuanzhi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=73,74 "Built target zhuanzhi"
 .PHONY : test/CMakeFiles/zhuanzhi.dir/all
 
 # Include target in all.
@@ -1206,7 +1284,7 @@ clean: test/CMakeFiles/NTdiedaifa.dir/clean
 test/CMakeFiles/pi.dir/all:
 	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/depend
 	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=45,46 "Built target pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=47,48 "Built target pi"
 .PHONY : test/CMakeFiles/pi.dir/all
 
 # Include target in all.
@@ -1317,7 +1395,7 @@ clean: test/CMakeFiles/assign.dir/clean
 test/CMakeFiles/yuanta.dir/all:
 	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/depend
 	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=63,64 "Built target yuanta"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=67,68 "Built target yuanta"
 .PHONY : test/CMakeFiles/yuanta.dir/all
 
 # Include target in all.

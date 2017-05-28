@@ -13,6 +13,7 @@
 /home/xm/repository/xm-study/build/test/CMakeFiles/install.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/edit_cache.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/install/local.dir
+/home/xm/repository/xm-study/build/test/CMakeFiles/spheretest.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/struct.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/if_else.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/Sum.dir
@@ -37,6 +38,7 @@
 /home/xm/repository/xm-study/build/test/CMakeFiles/Fibonacci.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/jc1.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/main.dir
+/home/xm/repository/xm-study/build/test/CMakeFiles/name.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/erfenfa.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/shuixhs.dir
 /home/xm/repository/xm-study/build/test/CMakeFiles/sum1.dir

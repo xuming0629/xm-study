@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/paixu.dir/paixu.cpp.o  -o paixu  -L/usr/local/lib -rdynamic 

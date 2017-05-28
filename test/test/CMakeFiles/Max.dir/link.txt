@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/Max.dir/Max.c.o  -o Max  -L/usr/local/lib -rdynamic 

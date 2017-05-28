@@ -155,6 +155,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/spheretest.dir/rule:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/spheretest.dir/rule
+.PHONY : test/CMakeFiles/spheretest.dir/rule
+
+# Convenience name for target.
+spheretest: test/CMakeFiles/spheretest.dir/rule
+
+.PHONY : spheretest
+
+# fast build rule for target.
+spheretest/fast:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/build
+.PHONY : spheretest/fast
+
+# Convenience name for target.
 test/CMakeFiles/struct.dir/rule:
 	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct.dir/rule
 .PHONY : test/CMakeFiles/struct.dir/rule
@@ -483,6 +498,21 @@ main: test/CMakeFiles/main.dir/rule
 main/fast:
 	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+# Convenience name for target.
+test/CMakeFiles/name.dir/rule:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/name.dir/rule
+.PHONY : test/CMakeFiles/name.dir/rule
+
+# Convenience name for target.
+name: test/CMakeFiles/name.dir/rule
+
+.PHONY : name
+
+# fast build rule for target.
+name/fast:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/build
+.PHONY : name/fast
 
 # Convenience name for target.
 test/CMakeFiles/erfenfa.dir/rule:
@@ -1246,6 +1276,33 @@ max.cpp.s:
 	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/max.cpp.s
 .PHONY : max.cpp.s
 
+name.o: name.c.o
+
+.PHONY : name.o
+
+# target to build an object file
+name.c.o:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/name.c.o
+.PHONY : name.c.o
+
+name.i: name.c.i
+
+.PHONY : name.i
+
+# target to preprocess a source file
+name.c.i:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/name.c.i
+.PHONY : name.c.i
+
+name.s: name.c.s
+
+.PHONY : name.s
+
+# target to generate assembly for a file
+name.c.s:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/name.c.s
+.PHONY : name.c.s
+
 paixu.o: paixu.cpp.o
 
 .PHONY : paixu.o
@@ -1380,6 +1437,33 @@ sm2.s: sm2.cpp.s
 sm2.cpp.s:
 	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/sm2.cpp.s
 .PHONY : sm2.cpp.s
+
+spheretest.o: spheretest.cpp.o
+
+.PHONY : spheretest.o
+
+# target to build an object file
+spheretest.cpp.o:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/spheretest.cpp.o
+.PHONY : spheretest.cpp.o
+
+spheretest.i: spheretest.cpp.i
+
+.PHONY : spheretest.i
+
+# target to preprocess a source file
+spheretest.cpp.i:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/spheretest.cpp.i
+.PHONY : spheretest.cpp.i
+
+spheretest.s: spheretest.cpp.s
+
+.PHONY : spheretest.s
+
+# target to generate assembly for a file
+spheretest.cpp.s:
+	cd /home/xm/repository/xm-study/build && $(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/spheretest.cpp.s
+.PHONY : spheretest.cpp.s
 
 sqr.o: sqr.cpp.o
 
@@ -1633,6 +1717,7 @@ help:
 	@echo "... install"
 	@echo "... edit_cache"
 	@echo "... install/local"
+	@echo "... spheretest"
 	@echo "... struct"
 	@echo "... if_else"
 	@echo "... Sum"
@@ -1657,6 +1742,7 @@ help:
 	@echo "... Fibonacci"
 	@echo "... jc1"
 	@echo "... main"
+	@echo "... name"
 	@echo "... erfenfa"
 	@echo "... shuixhs"
 	@echo "... sum1"
@@ -1734,6 +1820,9 @@ help:
 	@echo "... max.o"
 	@echo "... max.i"
 	@echo "... max.s"
+	@echo "... name.o"
+	@echo "... name.i"
+	@echo "... name.s"
 	@echo "... paixu.o"
 	@echo "... paixu.i"
 	@echo "... paixu.s"
@@ -1749,6 +1838,9 @@ help:
 	@echo "... sm2.o"
 	@echo "... sm2.i"
 	@echo "... sm2.s"
+	@echo "... spheretest.o"
+	@echo "... spheretest.i"
+	@echo "... spheretest.s"
 	@echo "... sqr.o"
 	@echo "... sqr.i"
 	@echo "... sqr.s"

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/spheretest.dir/spheretest.cpp.o  -o spheretest  -L/usr/local/lib -rdynamic 

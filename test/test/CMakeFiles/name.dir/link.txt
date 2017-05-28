@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/name.dir/name.c.o  -o name  -L/usr/local/lib -rdynamic 

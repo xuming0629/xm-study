@@ -48,24 +48,57 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuming/repository/xuming_study/test
+CMAKE_SOURCE_DIR = /home/xm/repository/xm-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuming/repository/xuming_study/test
+CMAKE_BINARY_DIR = /home/xm/repository/xm-study/test
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
-.PHONY : edit_cache/fast
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +111,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/test/CMakeFiles /home/xuming/repository/xuming_study/test/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/test/CMakeFiles /home/xm/repository/xm-study/test/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuming/repository/xuming_study/test/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/test/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +155,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named spheretest
+
+# Build rule for target.
+spheretest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spheretest
+.PHONY : spheretest
+
+# fast build rule for target.
+spheretest/fast:
+	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/build
+.PHONY : spheretest/fast
+
+#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -120,7 +177,7 @@ struct: cmake_check_build_system
 
 # fast build rule for target.
 struct/fast:
-	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
+	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
 .PHONY : struct/fast
 
 #=============================================================================
@@ -133,7 +190,7 @@ if_else: cmake_check_build_system
 
 # fast build rule for target.
 if_else/fast:
-	$(MAKE) -f CMakeFiles/if_else.dir/build.make CMakeFiles/if_else.dir/build
+	$(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/build
 .PHONY : if_else/fast
 
 #=============================================================================
@@ -146,7 +203,7 @@ Sum: cmake_check_build_system
 
 # fast build rule for target.
 Sum/fast:
-	$(MAKE) -f CMakeFiles/Sum.dir/build.make CMakeFiles/Sum.dir/build
+	$(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/build
 .PHONY : Sum/fast
 
 #=============================================================================
@@ -159,7 +216,7 @@ Max: cmake_check_build_system
 
 # fast build rule for target.
 Max/fast:
-	$(MAKE) -f CMakeFiles/Max.dir/build.make CMakeFiles/Max.dir/build
+	$(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/build
 .PHONY : Max/fast
 
 #=============================================================================
@@ -172,21 +229,8 @@ sm2: cmake_check_build_system
 
 # fast build rule for target.
 sm2/fast:
-	$(MAKE) -f CMakeFiles/sm2.dir/build.make CMakeFiles/sm2.dir/build
+	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
 .PHONY : sm2/fast
-
-#=============================================================================
-# Target rules for targets named math1
-
-# Build rule for target.
-math1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 math1
-.PHONY : math1
-
-# fast build rule for target.
-math1/fast:
-	$(MAKE) -f CMakeFiles/math1.dir/build.make CMakeFiles/math1.dir/build
-.PHONY : math1/fast
 
 #=============================================================================
 # Target rules for targets named zhizhen
@@ -198,8 +242,21 @@ zhizhen: cmake_check_build_system
 
 # fast build rule for target.
 zhizhen/fast:
-	$(MAKE) -f CMakeFiles/zhizhen.dir/build.make CMakeFiles/zhizhen.dir/build
+	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
 .PHONY : zhizhen/fast
+
+#=============================================================================
+# Target rules for targets named convert
+
+# Build rule for target.
+convert: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 convert
+.PHONY : convert
+
+# fast build rule for target.
+convert/fast:
+	$(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/build
+.PHONY : convert/fast
 
 #=============================================================================
 # Target rules for targets named equation1
@@ -211,7 +268,7 @@ equation1: cmake_check_build_system
 
 # fast build rule for target.
 equation1/fast:
-	$(MAKE) -f CMakeFiles/equation1.dir/build.make CMakeFiles/equation1.dir/build
+	$(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/build
 .PHONY : equation1/fast
 
 #=============================================================================
@@ -224,7 +281,7 @@ sushu: cmake_check_build_system
 
 # fast build rule for target.
 sushu/fast:
-	$(MAKE) -f CMakeFiles/sushu.dir/build.make CMakeFiles/sushu.dir/build
+	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
 .PHONY : sushu/fast
 
 #=============================================================================
@@ -237,7 +294,7 @@ zhengchu: cmake_check_build_system
 
 # fast build rule for target.
 zhengchu/fast:
-	$(MAKE) -f CMakeFiles/zhengchu.dir/build.make CMakeFiles/zhengchu.dir/build
+	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
 .PHONY : zhengchu/fast
 
 #=============================================================================
@@ -250,7 +307,7 @@ jiecheng: cmake_check_build_system
 
 # fast build rule for target.
 jiecheng/fast:
-	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/build
+	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
 .PHONY : jiecheng/fast
 
 #=============================================================================
@@ -263,7 +320,7 @@ qdxs: cmake_check_build_system
 
 # fast build rule for target.
 qdxs/fast:
-	$(MAKE) -f CMakeFiles/qdxs.dir/build.make CMakeFiles/qdxs.dir/build
+	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
 .PHONY : qdxs/fast
 
 #=============================================================================
@@ -276,7 +333,7 @@ paixu: cmake_check_build_system
 
 # fast build rule for target.
 paixu/fast:
-	$(MAKE) -f CMakeFiles/paixu.dir/build.make CMakeFiles/paixu.dir/build
+	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
 .PHONY : paixu/fast
 
 #=============================================================================
@@ -289,7 +346,7 @@ Helloworld: cmake_check_build_system
 
 # fast build rule for target.
 Helloworld/fast:
-	$(MAKE) -f CMakeFiles/Helloworld.dir/build.make CMakeFiles/Helloworld.dir/build
+	$(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/build
 .PHONY : Helloworld/fast
 
 #=============================================================================
@@ -302,60 +359,34 @@ max-jz: cmake_check_build_system
 
 # fast build rule for target.
 max-jz/fast:
-	$(MAKE) -f CMakeFiles/max-jz.dir/build.make CMakeFiles/max-jz.dir/build
+	$(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/build
 .PHONY : max-jz/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named math1
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+math1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 math1
+.PHONY : math1
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+math1/fast:
+	$(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/build
+.PHONY : math1/fast
 
 #=============================================================================
-# Target rules for targets named erfenfa
+# Target rules for targets named CGAL_test
 
 # Build rule for target.
-erfenfa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 erfenfa
-.PHONY : erfenfa
+CGAL_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CGAL_test
+.PHONY : CGAL_test
 
 # fast build rule for target.
-erfenfa/fast:
-	$(MAKE) -f CMakeFiles/erfenfa.dir/build.make CMakeFiles/erfenfa.dir/build
-.PHONY : erfenfa/fast
-
-#=============================================================================
-# Target rules for targets named convert
-
-# Build rule for target.
-convert: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 convert
-.PHONY : convert
-
-# fast build rule for target.
-convert/fast:
-	$(MAKE) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/build
-.PHONY : convert/fast
-
-#=============================================================================
-# Target rules for targets named max
-
-# Build rule for target.
-max: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 max
-.PHONY : max
-
-# fast build rule for target.
-max/fast:
-	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/build
-.PHONY : max/fast
+CGAL_test/fast:
+	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
+.PHONY : CGAL_test/fast
 
 #=============================================================================
 # Target rules for targets named sqr
@@ -367,7 +398,7 @@ sqr: cmake_check_build_system
 
 # fast build rule for target.
 sqr/fast:
-	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/build
+	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
 .PHONY : sqr/fast
 
 #=============================================================================
@@ -380,7 +411,7 @@ tuan: cmake_check_build_system
 
 # fast build rule for target.
 tuan/fast:
-	$(MAKE) -f CMakeFiles/tuan.dir/build.make CMakeFiles/tuan.dir/build
+	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
 .PHONY : tuan/fast
 
 #=============================================================================
@@ -393,7 +424,7 @@ Fibonacci: cmake_check_build_system
 
 # fast build rule for target.
 Fibonacci/fast:
-	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/build
+	$(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/build
 .PHONY : Fibonacci/fast
 
 #=============================================================================
@@ -406,8 +437,47 @@ jc1: cmake_check_build_system
 
 # fast build rule for target.
 jc1/fast:
-	$(MAKE) -f CMakeFiles/jc1.dir/build.make CMakeFiles/jc1.dir/build
+	$(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/build
 .PHONY : jc1/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named name
+
+# Build rule for target.
+name: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 name
+.PHONY : name
+
+# fast build rule for target.
+name/fast:
+	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/build
+.PHONY : name/fast
+
+#=============================================================================
+# Target rules for targets named erfenfa
+
+# Build rule for target.
+erfenfa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 erfenfa
+.PHONY : erfenfa
+
+# fast build rule for target.
+erfenfa/fast:
+	$(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/build
+.PHONY : erfenfa/fast
 
 #=============================================================================
 # Target rules for targets named shuixhs
@@ -419,7 +489,7 @@ shuixhs: cmake_check_build_system
 
 # fast build rule for target.
 shuixhs/fast:
-	$(MAKE) -f CMakeFiles/shuixhs.dir/build.make CMakeFiles/shuixhs.dir/build
+	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
 .PHONY : shuixhs/fast
 
 #=============================================================================
@@ -432,8 +502,21 @@ sum1: cmake_check_build_system
 
 # fast build rule for target.
 sum1/fast:
-	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/build
+	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
 .PHONY : sum1/fast
+
+#=============================================================================
+# Target rules for targets named max
+
+# Build rule for target.
+max: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 max
+.PHONY : max
+
+# fast build rule for target.
+max/fast:
+	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
+.PHONY : max/fast
 
 #=============================================================================
 # Target rules for targets named zhuanzhi
@@ -445,7 +528,7 @@ zhuanzhi: cmake_check_build_system
 
 # fast build rule for target.
 zhuanzhi/fast:
-	$(MAKE) -f CMakeFiles/zhuanzhi.dir/build.make CMakeFiles/zhuanzhi.dir/build
+	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
 .PHONY : zhuanzhi/fast
 
 #=============================================================================
@@ -458,7 +541,7 @@ NTdiedaifa: cmake_check_build_system
 
 # fast build rule for target.
 NTdiedaifa/fast:
-	$(MAKE) -f CMakeFiles/NTdiedaifa.dir/build.make CMakeFiles/NTdiedaifa.dir/build
+	$(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/build
 .PHONY : NTdiedaifa/fast
 
 #=============================================================================
@@ -471,7 +554,7 @@ pi: cmake_check_build_system
 
 # fast build rule for target.
 pi/fast:
-	$(MAKE) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/build
+	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
 .PHONY : pi/fast
 
 #=============================================================================
@@ -484,7 +567,7 @@ gys: cmake_check_build_system
 
 # fast build rule for target.
 gys/fast:
-	$(MAKE) -f CMakeFiles/gys.dir/build.make CMakeFiles/gys.dir/build
+	$(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/build
 .PHONY : gys/fast
 
 #=============================================================================
@@ -497,7 +580,7 @@ assign: cmake_check_build_system
 
 # fast build rule for target.
 assign/fast:
-	$(MAKE) -f CMakeFiles/assign.dir/build.make CMakeFiles/assign.dir/build
+	$(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/build
 .PHONY : assign/fast
 
 #=============================================================================
@@ -510,7 +593,7 @@ yuanta: cmake_check_build_system
 
 # fast build rule for target.
 yuanta/fast:
-	$(MAKE) -f CMakeFiles/yuanta.dir/build.make CMakeFiles/yuanta.dir/build
+	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
 .PHONY : yuanta/fast
 
 #=============================================================================
@@ -523,7 +606,7 @@ class: cmake_check_build_system
 
 # fast build rule for target.
 class/fast:
-	$(MAKE) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/build
+	$(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/build
 .PHONY : class/fast
 
 #=============================================================================
@@ -536,7 +619,7 @@ equation: cmake_check_build_system
 
 # fast build rule for target.
 equation/fast:
-	$(MAKE) -f CMakeFiles/equation.dir/build.make CMakeFiles/equation.dir/build
+	$(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/build
 .PHONY : equation/fast
 
 #=============================================================================
@@ -549,518 +632,8 @@ NTerfenfa: cmake_check_build_system
 
 # fast build rule for target.
 NTerfenfa/fast:
-	$(MAKE) -f CMakeFiles/NTerfenfa.dir/build.make CMakeFiles/NTerfenfa.dir/build
+	$(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/build
 .PHONY : NTerfenfa/fast
-
-# target to build an object file
-Fibonacci.o:
-	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.o
-.PHONY : Fibonacci.o
-
-# target to preprocess a source file
-Fibonacci.i:
-	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.i
-.PHONY : Fibonacci.i
-
-# target to generate assembly for a file
-Fibonacci.s:
-	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.s
-.PHONY : Fibonacci.s
-
-# target to build an object file
-Helloworld.o:
-	$(MAKE) -f CMakeFiles/Helloworld.dir/build.make CMakeFiles/Helloworld.dir/Helloworld.o
-.PHONY : Helloworld.o
-
-# target to preprocess a source file
-Helloworld.i:
-	$(MAKE) -f CMakeFiles/Helloworld.dir/build.make CMakeFiles/Helloworld.dir/Helloworld.i
-.PHONY : Helloworld.i
-
-# target to generate assembly for a file
-Helloworld.s:
-	$(MAKE) -f CMakeFiles/Helloworld.dir/build.make CMakeFiles/Helloworld.dir/Helloworld.s
-.PHONY : Helloworld.s
-
-# target to build an object file
-Max.o:
-	$(MAKE) -f CMakeFiles/Max.dir/build.make CMakeFiles/Max.dir/Max.o
-.PHONY : Max.o
-
-# target to preprocess a source file
-Max.i:
-	$(MAKE) -f CMakeFiles/Max.dir/build.make CMakeFiles/Max.dir/Max.i
-.PHONY : Max.i
-
-# target to generate assembly for a file
-Max.s:
-	$(MAKE) -f CMakeFiles/Max.dir/build.make CMakeFiles/Max.dir/Max.s
-.PHONY : Max.s
-
-# target to build an object file
-NTdiedaifa.o:
-	$(MAKE) -f CMakeFiles/NTdiedaifa.dir/build.make CMakeFiles/NTdiedaifa.dir/NTdiedaifa.o
-.PHONY : NTdiedaifa.o
-
-# target to preprocess a source file
-NTdiedaifa.i:
-	$(MAKE) -f CMakeFiles/NTdiedaifa.dir/build.make CMakeFiles/NTdiedaifa.dir/NTdiedaifa.i
-.PHONY : NTdiedaifa.i
-
-# target to generate assembly for a file
-NTdiedaifa.s:
-	$(MAKE) -f CMakeFiles/NTdiedaifa.dir/build.make CMakeFiles/NTdiedaifa.dir/NTdiedaifa.s
-.PHONY : NTdiedaifa.s
-
-# target to build an object file
-NTerfenfa.o:
-	$(MAKE) -f CMakeFiles/NTerfenfa.dir/build.make CMakeFiles/NTerfenfa.dir/NTerfenfa.o
-.PHONY : NTerfenfa.o
-
-# target to preprocess a source file
-NTerfenfa.i:
-	$(MAKE) -f CMakeFiles/NTerfenfa.dir/build.make CMakeFiles/NTerfenfa.dir/NTerfenfa.i
-.PHONY : NTerfenfa.i
-
-# target to generate assembly for a file
-NTerfenfa.s:
-	$(MAKE) -f CMakeFiles/NTerfenfa.dir/build.make CMakeFiles/NTerfenfa.dir/NTerfenfa.s
-.PHONY : NTerfenfa.s
-
-# target to build an object file
-Sum.o:
-	$(MAKE) -f CMakeFiles/Sum.dir/build.make CMakeFiles/Sum.dir/Sum.o
-.PHONY : Sum.o
-
-# target to preprocess a source file
-Sum.i:
-	$(MAKE) -f CMakeFiles/Sum.dir/build.make CMakeFiles/Sum.dir/Sum.i
-.PHONY : Sum.i
-
-# target to generate assembly for a file
-Sum.s:
-	$(MAKE) -f CMakeFiles/Sum.dir/build.make CMakeFiles/Sum.dir/Sum.s
-.PHONY : Sum.s
-
-# target to build an object file
-assign.o:
-	$(MAKE) -f CMakeFiles/assign.dir/build.make CMakeFiles/assign.dir/assign.o
-.PHONY : assign.o
-
-# target to preprocess a source file
-assign.i:
-	$(MAKE) -f CMakeFiles/assign.dir/build.make CMakeFiles/assign.dir/assign.i
-.PHONY : assign.i
-
-# target to generate assembly for a file
-assign.s:
-	$(MAKE) -f CMakeFiles/assign.dir/build.make CMakeFiles/assign.dir/assign.s
-.PHONY : assign.s
-
-# target to build an object file
-class.o:
-	$(MAKE) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/class.o
-.PHONY : class.o
-
-# target to preprocess a source file
-class.i:
-	$(MAKE) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/class.i
-.PHONY : class.i
-
-# target to generate assembly for a file
-class.s:
-	$(MAKE) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/class.s
-.PHONY : class.s
-
-# target to build an object file
-convert.o:
-	$(MAKE) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/convert.o
-.PHONY : convert.o
-
-# target to preprocess a source file
-convert.i:
-	$(MAKE) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/convert.i
-.PHONY : convert.i
-
-# target to generate assembly for a file
-convert.s:
-	$(MAKE) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/convert.s
-.PHONY : convert.s
-
-# target to build an object file
-equation.o:
-	$(MAKE) -f CMakeFiles/equation.dir/build.make CMakeFiles/equation.dir/equation.o
-.PHONY : equation.o
-
-# target to preprocess a source file
-equation.i:
-	$(MAKE) -f CMakeFiles/equation.dir/build.make CMakeFiles/equation.dir/equation.i
-.PHONY : equation.i
-
-# target to generate assembly for a file
-equation.s:
-	$(MAKE) -f CMakeFiles/equation.dir/build.make CMakeFiles/equation.dir/equation.s
-.PHONY : equation.s
-
-# target to build an object file
-equation1.o:
-	$(MAKE) -f CMakeFiles/equation1.dir/build.make CMakeFiles/equation1.dir/equation1.o
-.PHONY : equation1.o
-
-# target to preprocess a source file
-equation1.i:
-	$(MAKE) -f CMakeFiles/equation1.dir/build.make CMakeFiles/equation1.dir/equation1.i
-.PHONY : equation1.i
-
-# target to generate assembly for a file
-equation1.s:
-	$(MAKE) -f CMakeFiles/equation1.dir/build.make CMakeFiles/equation1.dir/equation1.s
-.PHONY : equation1.s
-
-# target to build an object file
-erfenfa.o:
-	$(MAKE) -f CMakeFiles/erfenfa.dir/build.make CMakeFiles/erfenfa.dir/erfenfa.o
-.PHONY : erfenfa.o
-
-# target to preprocess a source file
-erfenfa.i:
-	$(MAKE) -f CMakeFiles/erfenfa.dir/build.make CMakeFiles/erfenfa.dir/erfenfa.i
-.PHONY : erfenfa.i
-
-# target to generate assembly for a file
-erfenfa.s:
-	$(MAKE) -f CMakeFiles/erfenfa.dir/build.make CMakeFiles/erfenfa.dir/erfenfa.s
-.PHONY : erfenfa.s
-
-# target to build an object file
-gys.o:
-	$(MAKE) -f CMakeFiles/gys.dir/build.make CMakeFiles/gys.dir/gys.o
-.PHONY : gys.o
-
-# target to preprocess a source file
-gys.i:
-	$(MAKE) -f CMakeFiles/gys.dir/build.make CMakeFiles/gys.dir/gys.i
-.PHONY : gys.i
-
-# target to generate assembly for a file
-gys.s:
-	$(MAKE) -f CMakeFiles/gys.dir/build.make CMakeFiles/gys.dir/gys.s
-.PHONY : gys.s
-
-# target to build an object file
-if_else.o:
-	$(MAKE) -f CMakeFiles/if_else.dir/build.make CMakeFiles/if_else.dir/if_else.o
-.PHONY : if_else.o
-
-# target to preprocess a source file
-if_else.i:
-	$(MAKE) -f CMakeFiles/if_else.dir/build.make CMakeFiles/if_else.dir/if_else.i
-.PHONY : if_else.i
-
-# target to generate assembly for a file
-if_else.s:
-	$(MAKE) -f CMakeFiles/if_else.dir/build.make CMakeFiles/if_else.dir/if_else.s
-.PHONY : if_else.s
-
-# target to build an object file
-jc1.o:
-	$(MAKE) -f CMakeFiles/jc1.dir/build.make CMakeFiles/jc1.dir/jc1.o
-.PHONY : jc1.o
-
-# target to preprocess a source file
-jc1.i:
-	$(MAKE) -f CMakeFiles/jc1.dir/build.make CMakeFiles/jc1.dir/jc1.i
-.PHONY : jc1.i
-
-# target to generate assembly for a file
-jc1.s:
-	$(MAKE) -f CMakeFiles/jc1.dir/build.make CMakeFiles/jc1.dir/jc1.s
-.PHONY : jc1.s
-
-# target to build an object file
-jiecheng.o:
-	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/jiecheng.o
-.PHONY : jiecheng.o
-
-# target to preprocess a source file
-jiecheng.i:
-	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/jiecheng.i
-.PHONY : jiecheng.i
-
-# target to generate assembly for a file
-jiecheng.s:
-	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/jiecheng.s
-.PHONY : jiecheng.s
-
-# target to build an object file
-main.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.o
-.PHONY : main.o
-
-# target to preprocess a source file
-main.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.i
-.PHONY : main.i
-
-# target to generate assembly for a file
-main.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.s
-.PHONY : main.s
-
-# target to build an object file
-math1.o:
-	$(MAKE) -f CMakeFiles/math1.dir/build.make CMakeFiles/math1.dir/math1.o
-.PHONY : math1.o
-
-# target to preprocess a source file
-math1.i:
-	$(MAKE) -f CMakeFiles/math1.dir/build.make CMakeFiles/math1.dir/math1.i
-.PHONY : math1.i
-
-# target to generate assembly for a file
-math1.s:
-	$(MAKE) -f CMakeFiles/math1.dir/build.make CMakeFiles/math1.dir/math1.s
-.PHONY : math1.s
-
-# target to build an object file
-max-jz.o:
-	$(MAKE) -f CMakeFiles/max-jz.dir/build.make CMakeFiles/max-jz.dir/max-jz.o
-.PHONY : max-jz.o
-
-# target to preprocess a source file
-max-jz.i:
-	$(MAKE) -f CMakeFiles/max-jz.dir/build.make CMakeFiles/max-jz.dir/max-jz.i
-.PHONY : max-jz.i
-
-# target to generate assembly for a file
-max-jz.s:
-	$(MAKE) -f CMakeFiles/max-jz.dir/build.make CMakeFiles/max-jz.dir/max-jz.s
-.PHONY : max-jz.s
-
-# target to build an object file
-max.o:
-	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/max.o
-.PHONY : max.o
-
-# target to preprocess a source file
-max.i:
-	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/max.i
-.PHONY : max.i
-
-# target to generate assembly for a file
-max.s:
-	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/max.s
-.PHONY : max.s
-
-# target to build an object file
-paixu.o:
-	$(MAKE) -f CMakeFiles/paixu.dir/build.make CMakeFiles/paixu.dir/paixu.o
-.PHONY : paixu.o
-
-# target to preprocess a source file
-paixu.i:
-	$(MAKE) -f CMakeFiles/paixu.dir/build.make CMakeFiles/paixu.dir/paixu.i
-.PHONY : paixu.i
-
-# target to generate assembly for a file
-paixu.s:
-	$(MAKE) -f CMakeFiles/paixu.dir/build.make CMakeFiles/paixu.dir/paixu.s
-.PHONY : paixu.s
-
-# target to build an object file
-pi.o:
-	$(MAKE) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.o
-.PHONY : pi.o
-
-# target to preprocess a source file
-pi.i:
-	$(MAKE) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.i
-.PHONY : pi.i
-
-# target to generate assembly for a file
-pi.s:
-	$(MAKE) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.s
-.PHONY : pi.s
-
-# target to build an object file
-qdxs.o:
-	$(MAKE) -f CMakeFiles/qdxs.dir/build.make CMakeFiles/qdxs.dir/qdxs.o
-.PHONY : qdxs.o
-
-# target to preprocess a source file
-qdxs.i:
-	$(MAKE) -f CMakeFiles/qdxs.dir/build.make CMakeFiles/qdxs.dir/qdxs.i
-.PHONY : qdxs.i
-
-# target to generate assembly for a file
-qdxs.s:
-	$(MAKE) -f CMakeFiles/qdxs.dir/build.make CMakeFiles/qdxs.dir/qdxs.s
-.PHONY : qdxs.s
-
-# target to build an object file
-shuixhs.o:
-	$(MAKE) -f CMakeFiles/shuixhs.dir/build.make CMakeFiles/shuixhs.dir/shuixhs.o
-.PHONY : shuixhs.o
-
-# target to preprocess a source file
-shuixhs.i:
-	$(MAKE) -f CMakeFiles/shuixhs.dir/build.make CMakeFiles/shuixhs.dir/shuixhs.i
-.PHONY : shuixhs.i
-
-# target to generate assembly for a file
-shuixhs.s:
-	$(MAKE) -f CMakeFiles/shuixhs.dir/build.make CMakeFiles/shuixhs.dir/shuixhs.s
-.PHONY : shuixhs.s
-
-# target to build an object file
-sm2.o:
-	$(MAKE) -f CMakeFiles/sm2.dir/build.make CMakeFiles/sm2.dir/sm2.o
-.PHONY : sm2.o
-
-# target to preprocess a source file
-sm2.i:
-	$(MAKE) -f CMakeFiles/sm2.dir/build.make CMakeFiles/sm2.dir/sm2.i
-.PHONY : sm2.i
-
-# target to generate assembly for a file
-sm2.s:
-	$(MAKE) -f CMakeFiles/sm2.dir/build.make CMakeFiles/sm2.dir/sm2.s
-.PHONY : sm2.s
-
-# target to build an object file
-sqr.o:
-	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/sqr.o
-.PHONY : sqr.o
-
-# target to preprocess a source file
-sqr.i:
-	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/sqr.i
-.PHONY : sqr.i
-
-# target to generate assembly for a file
-sqr.s:
-	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/sqr.s
-.PHONY : sqr.s
-
-# target to build an object file
-struct.o:
-	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct.o
-.PHONY : struct.o
-
-# target to preprocess a source file
-struct.i:
-	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct.i
-.PHONY : struct.i
-
-# target to generate assembly for a file
-struct.s:
-	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct.s
-.PHONY : struct.s
-
-# target to build an object file
-sum1.o:
-	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/sum1.o
-.PHONY : sum1.o
-
-# target to preprocess a source file
-sum1.i:
-	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/sum1.i
-.PHONY : sum1.i
-
-# target to generate assembly for a file
-sum1.s:
-	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/sum1.s
-.PHONY : sum1.s
-
-# target to build an object file
-sushu.o:
-	$(MAKE) -f CMakeFiles/sushu.dir/build.make CMakeFiles/sushu.dir/sushu.o
-.PHONY : sushu.o
-
-# target to preprocess a source file
-sushu.i:
-	$(MAKE) -f CMakeFiles/sushu.dir/build.make CMakeFiles/sushu.dir/sushu.i
-.PHONY : sushu.i
-
-# target to generate assembly for a file
-sushu.s:
-	$(MAKE) -f CMakeFiles/sushu.dir/build.make CMakeFiles/sushu.dir/sushu.s
-.PHONY : sushu.s
-
-# target to build an object file
-tuan.o:
-	$(MAKE) -f CMakeFiles/tuan.dir/build.make CMakeFiles/tuan.dir/tuan.o
-.PHONY : tuan.o
-
-# target to preprocess a source file
-tuan.i:
-	$(MAKE) -f CMakeFiles/tuan.dir/build.make CMakeFiles/tuan.dir/tuan.i
-.PHONY : tuan.i
-
-# target to generate assembly for a file
-tuan.s:
-	$(MAKE) -f CMakeFiles/tuan.dir/build.make CMakeFiles/tuan.dir/tuan.s
-.PHONY : tuan.s
-
-# target to build an object file
-yuanta.o:
-	$(MAKE) -f CMakeFiles/yuanta.dir/build.make CMakeFiles/yuanta.dir/yuanta.o
-.PHONY : yuanta.o
-
-# target to preprocess a source file
-yuanta.i:
-	$(MAKE) -f CMakeFiles/yuanta.dir/build.make CMakeFiles/yuanta.dir/yuanta.i
-.PHONY : yuanta.i
-
-# target to generate assembly for a file
-yuanta.s:
-	$(MAKE) -f CMakeFiles/yuanta.dir/build.make CMakeFiles/yuanta.dir/yuanta.s
-.PHONY : yuanta.s
-
-# target to build an object file
-zhengchu.o:
-	$(MAKE) -f CMakeFiles/zhengchu.dir/build.make CMakeFiles/zhengchu.dir/zhengchu.o
-.PHONY : zhengchu.o
-
-# target to preprocess a source file
-zhengchu.i:
-	$(MAKE) -f CMakeFiles/zhengchu.dir/build.make CMakeFiles/zhengchu.dir/zhengchu.i
-.PHONY : zhengchu.i
-
-# target to generate assembly for a file
-zhengchu.s:
-	$(MAKE) -f CMakeFiles/zhengchu.dir/build.make CMakeFiles/zhengchu.dir/zhengchu.s
-.PHONY : zhengchu.s
-
-# target to build an object file
-zhizhen.o:
-	$(MAKE) -f CMakeFiles/zhizhen.dir/build.make CMakeFiles/zhizhen.dir/zhizhen.o
-.PHONY : zhizhen.o
-
-# target to preprocess a source file
-zhizhen.i:
-	$(MAKE) -f CMakeFiles/zhizhen.dir/build.make CMakeFiles/zhizhen.dir/zhizhen.i
-.PHONY : zhizhen.i
-
-# target to generate assembly for a file
-zhizhen.s:
-	$(MAKE) -f CMakeFiles/zhizhen.dir/build.make CMakeFiles/zhizhen.dir/zhizhen.s
-.PHONY : zhizhen.s
-
-# target to build an object file
-zhuanzhi.o:
-	$(MAKE) -f CMakeFiles/zhuanzhi.dir/build.make CMakeFiles/zhuanzhi.dir/zhuanzhi.o
-.PHONY : zhuanzhi.o
-
-# target to preprocess a source file
-zhuanzhi.i:
-	$(MAKE) -f CMakeFiles/zhuanzhi.dir/build.make CMakeFiles/zhuanzhi.dir/zhuanzhi.i
-.PHONY : zhuanzhi.i
-
-# target to generate assembly for a file
-zhuanzhi.s:
-	$(MAKE) -f CMakeFiles/zhuanzhi.dir/build.make CMakeFiles/zhuanzhi.dir/zhuanzhi.s
-.PHONY : zhuanzhi.s
 
 # Help Target
 help:
@@ -1068,14 +641,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... spheretest"
 	@echo "... struct"
 	@echo "... if_else"
 	@echo "... Sum"
 	@echo "... Max"
 	@echo "... sm2"
-	@echo "... math1"
 	@echo "... zhizhen"
+	@echo "... convert"
 	@echo "... equation1"
 	@echo "... sushu"
 	@echo "... zhengchu"
@@ -1084,17 +663,18 @@ help:
 	@echo "... paixu"
 	@echo "... Helloworld"
 	@echo "... max-jz"
-	@echo "... main"
-	@echo "... erfenfa"
-	@echo "... convert"
-	@echo "... max"
+	@echo "... math1"
+	@echo "... CGAL_test"
 	@echo "... sqr"
 	@echo "... tuan"
 	@echo "... Fibonacci"
 	@echo "... jc1"
+	@echo "... main"
+	@echo "... name"
+	@echo "... erfenfa"
 	@echo "... shuixhs"
 	@echo "... sum1"
-	@echo "... rebuild_cache"
+	@echo "... max"
 	@echo "... zhuanzhi"
 	@echo "... NTdiedaifa"
 	@echo "... pi"
@@ -1104,108 +684,6 @@ help:
 	@echo "... class"
 	@echo "... equation"
 	@echo "... NTerfenfa"
-	@echo "... Fibonacci.o"
-	@echo "... Fibonacci.i"
-	@echo "... Fibonacci.s"
-	@echo "... Helloworld.o"
-	@echo "... Helloworld.i"
-	@echo "... Helloworld.s"
-	@echo "... Max.o"
-	@echo "... Max.i"
-	@echo "... Max.s"
-	@echo "... NTdiedaifa.o"
-	@echo "... NTdiedaifa.i"
-	@echo "... NTdiedaifa.s"
-	@echo "... NTerfenfa.o"
-	@echo "... NTerfenfa.i"
-	@echo "... NTerfenfa.s"
-	@echo "... Sum.o"
-	@echo "... Sum.i"
-	@echo "... Sum.s"
-	@echo "... assign.o"
-	@echo "... assign.i"
-	@echo "... assign.s"
-	@echo "... class.o"
-	@echo "... class.i"
-	@echo "... class.s"
-	@echo "... convert.o"
-	@echo "... convert.i"
-	@echo "... convert.s"
-	@echo "... equation.o"
-	@echo "... equation.i"
-	@echo "... equation.s"
-	@echo "... equation1.o"
-	@echo "... equation1.i"
-	@echo "... equation1.s"
-	@echo "... erfenfa.o"
-	@echo "... erfenfa.i"
-	@echo "... erfenfa.s"
-	@echo "... gys.o"
-	@echo "... gys.i"
-	@echo "... gys.s"
-	@echo "... if_else.o"
-	@echo "... if_else.i"
-	@echo "... if_else.s"
-	@echo "... jc1.o"
-	@echo "... jc1.i"
-	@echo "... jc1.s"
-	@echo "... jiecheng.o"
-	@echo "... jiecheng.i"
-	@echo "... jiecheng.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... math1.o"
-	@echo "... math1.i"
-	@echo "... math1.s"
-	@echo "... max-jz.o"
-	@echo "... max-jz.i"
-	@echo "... max-jz.s"
-	@echo "... max.o"
-	@echo "... max.i"
-	@echo "... max.s"
-	@echo "... paixu.o"
-	@echo "... paixu.i"
-	@echo "... paixu.s"
-	@echo "... pi.o"
-	@echo "... pi.i"
-	@echo "... pi.s"
-	@echo "... qdxs.o"
-	@echo "... qdxs.i"
-	@echo "... qdxs.s"
-	@echo "... shuixhs.o"
-	@echo "... shuixhs.i"
-	@echo "... shuixhs.s"
-	@echo "... sm2.o"
-	@echo "... sm2.i"
-	@echo "... sm2.s"
-	@echo "... sqr.o"
-	@echo "... sqr.i"
-	@echo "... sqr.s"
-	@echo "... struct.o"
-	@echo "... struct.i"
-	@echo "... struct.s"
-	@echo "... sum1.o"
-	@echo "... sum1.i"
-	@echo "... sum1.s"
-	@echo "... sushu.o"
-	@echo "... sushu.i"
-	@echo "... sushu.s"
-	@echo "... tuan.o"
-	@echo "... tuan.i"
-	@echo "... tuan.s"
-	@echo "... yuanta.o"
-	@echo "... yuanta.i"
-	@echo "... yuanta.s"
-	@echo "... zhengchu.o"
-	@echo "... zhengchu.i"
-	@echo "... zhengchu.s"
-	@echo "... zhizhen.o"
-	@echo "... zhizhen.i"
-	@echo "... zhizhen.s"
-	@echo "... zhuanzhi.o"
-	@echo "... zhuanzhi.i"
-	@echo "... zhuanzhi.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/gys.dir/gys.cpp.o  -o gys  -L/usr/local/lib -rdynamic 

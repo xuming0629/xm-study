@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/NTdiedaifa.dir/NTdiedaifa.cpp.o  -o NTdiedaifa  -L/usr/local/lib -rdynamic 

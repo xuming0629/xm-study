@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/zhizhen_test.dir/zhizhen_test.cpp.o  -o zhizhen_test  -L/usr/local/lib -rdynamic 

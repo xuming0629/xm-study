@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/sqr.dir/sqr.cpp.o  -o sqr  -L/usr/local/lib -rdynamic 

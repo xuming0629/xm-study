@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/CGAL_test.dir/CGAL_test.cpp.o  -o CGAL_test  -L/usr/local/lib -rdynamic -lCGAL -lCGAL_Core -lgmp -lmpfr -Wl,-rpath,/usr/local/lib 

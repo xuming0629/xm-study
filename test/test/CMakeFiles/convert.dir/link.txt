@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/convert.dir/convert.cpp.o  -o convert  -L/usr/local/lib -rdynamic 

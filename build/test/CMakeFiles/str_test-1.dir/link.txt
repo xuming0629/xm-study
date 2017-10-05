@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/str_test-1.dir/str_test-1.cpp.o  -o str_test-1  -L/usr/local/lib -rdynamic 

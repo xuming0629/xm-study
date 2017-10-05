@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/max-jz.dir/max-jz.cpp.o  -o max-jz  -L/usr/local/lib -rdynamic 

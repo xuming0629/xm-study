@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/math1.dir/math1.cpp.o  -o math1  -L/usr/local/lib -rdynamic 

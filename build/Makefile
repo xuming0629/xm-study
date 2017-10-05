@@ -56,39 +56,6 @@ CMAKE_BINARY_DIR = /home/xm/repository/xm-study/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -121,6 +88,28 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,290 +144,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named spheretest
+# Target rules for targets named test_static
 
 # Build rule for target.
-spheretest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spheretest
-.PHONY : spheretest
+test_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_static
+.PHONY : test_static
 
 # fast build rule for target.
-spheretest/fast:
-	$(MAKE) -f test/CMakeFiles/spheretest.dir/build.make test/CMakeFiles/spheretest.dir/build
-.PHONY : spheretest/fast
-
-#=============================================================================
-# Target rules for targets named struct
-
-# Build rule for target.
-struct: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 struct
-.PHONY : struct
-
-# fast build rule for target.
-struct/fast:
-	$(MAKE) -f test/CMakeFiles/struct.dir/build.make test/CMakeFiles/struct.dir/build
-.PHONY : struct/fast
-
-#=============================================================================
-# Target rules for targets named if_else
-
-# Build rule for target.
-if_else: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 if_else
-.PHONY : if_else
-
-# fast build rule for target.
-if_else/fast:
-	$(MAKE) -f test/CMakeFiles/if_else.dir/build.make test/CMakeFiles/if_else.dir/build
-.PHONY : if_else/fast
-
-#=============================================================================
-# Target rules for targets named Sum
-
-# Build rule for target.
-Sum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Sum
-.PHONY : Sum
-
-# fast build rule for target.
-Sum/fast:
-	$(MAKE) -f test/CMakeFiles/Sum.dir/build.make test/CMakeFiles/Sum.dir/build
-.PHONY : Sum/fast
-
-#=============================================================================
-# Target rules for targets named Max
-
-# Build rule for target.
-Max: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Max
-.PHONY : Max
-
-# fast build rule for target.
-Max/fast:
-	$(MAKE) -f test/CMakeFiles/Max.dir/build.make test/CMakeFiles/Max.dir/build
-.PHONY : Max/fast
-
-#=============================================================================
-# Target rules for targets named sm2
-
-# Build rule for target.
-sm2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sm2
-.PHONY : sm2
-
-# fast build rule for target.
-sm2/fast:
-	$(MAKE) -f test/CMakeFiles/sm2.dir/build.make test/CMakeFiles/sm2.dir/build
-.PHONY : sm2/fast
-
-#=============================================================================
-# Target rules for targets named zhizhen
-
-# Build rule for target.
-zhizhen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zhizhen
-.PHONY : zhizhen
-
-# fast build rule for target.
-zhizhen/fast:
-	$(MAKE) -f test/CMakeFiles/zhizhen.dir/build.make test/CMakeFiles/zhizhen.dir/build
-.PHONY : zhizhen/fast
-
-#=============================================================================
-# Target rules for targets named convert
-
-# Build rule for target.
-convert: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 convert
-.PHONY : convert
-
-# fast build rule for target.
-convert/fast:
-	$(MAKE) -f test/CMakeFiles/convert.dir/build.make test/CMakeFiles/convert.dir/build
-.PHONY : convert/fast
-
-#=============================================================================
-# Target rules for targets named equation1
-
-# Build rule for target.
-equation1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 equation1
-.PHONY : equation1
-
-# fast build rule for target.
-equation1/fast:
-	$(MAKE) -f test/CMakeFiles/equation1.dir/build.make test/CMakeFiles/equation1.dir/build
-.PHONY : equation1/fast
-
-#=============================================================================
-# Target rules for targets named sushu
-
-# Build rule for target.
-sushu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sushu
-.PHONY : sushu
-
-# fast build rule for target.
-sushu/fast:
-	$(MAKE) -f test/CMakeFiles/sushu.dir/build.make test/CMakeFiles/sushu.dir/build
-.PHONY : sushu/fast
-
-#=============================================================================
-# Target rules for targets named zhengchu
-
-# Build rule for target.
-zhengchu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zhengchu
-.PHONY : zhengchu
-
-# fast build rule for target.
-zhengchu/fast:
-	$(MAKE) -f test/CMakeFiles/zhengchu.dir/build.make test/CMakeFiles/zhengchu.dir/build
-.PHONY : zhengchu/fast
-
-#=============================================================================
-# Target rules for targets named jiecheng
-
-# Build rule for target.
-jiecheng: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 jiecheng
-.PHONY : jiecheng
-
-# fast build rule for target.
-jiecheng/fast:
-	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
-.PHONY : jiecheng/fast
-
-#=============================================================================
-# Target rules for targets named qdxs
-
-# Build rule for target.
-qdxs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 qdxs
-.PHONY : qdxs
-
-# fast build rule for target.
-qdxs/fast:
-	$(MAKE) -f test/CMakeFiles/qdxs.dir/build.make test/CMakeFiles/qdxs.dir/build
-.PHONY : qdxs/fast
-
-#=============================================================================
-# Target rules for targets named paixu
-
-# Build rule for target.
-paixu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paixu
-.PHONY : paixu
-
-# fast build rule for target.
-paixu/fast:
-	$(MAKE) -f test/CMakeFiles/paixu.dir/build.make test/CMakeFiles/paixu.dir/build
-.PHONY : paixu/fast
-
-#=============================================================================
-# Target rules for targets named Helloworld
-
-# Build rule for target.
-Helloworld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Helloworld
-.PHONY : Helloworld
-
-# fast build rule for target.
-Helloworld/fast:
-	$(MAKE) -f test/CMakeFiles/Helloworld.dir/build.make test/CMakeFiles/Helloworld.dir/build
-.PHONY : Helloworld/fast
-
-#=============================================================================
-# Target rules for targets named max-jz
-
-# Build rule for target.
-max-jz: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 max-jz
-.PHONY : max-jz
-
-# fast build rule for target.
-max-jz/fast:
-	$(MAKE) -f test/CMakeFiles/max-jz.dir/build.make test/CMakeFiles/max-jz.dir/build
-.PHONY : max-jz/fast
-
-#=============================================================================
-# Target rules for targets named math1
-
-# Build rule for target.
-math1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 math1
-.PHONY : math1
-
-# fast build rule for target.
-math1/fast:
-	$(MAKE) -f test/CMakeFiles/math1.dir/build.make test/CMakeFiles/math1.dir/build
-.PHONY : math1/fast
-
-#=============================================================================
-# Target rules for targets named CGAL_test
-
-# Build rule for target.
-CGAL_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CGAL_test
-.PHONY : CGAL_test
-
-# fast build rule for target.
-CGAL_test/fast:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-.PHONY : CGAL_test/fast
-
-#=============================================================================
-# Target rules for targets named sqr
-
-# Build rule for target.
-sqr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sqr
-.PHONY : sqr
-
-# fast build rule for target.
-sqr/fast:
-	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
-.PHONY : sqr/fast
-
-#=============================================================================
-# Target rules for targets named tuan
-
-# Build rule for target.
-tuan: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tuan
-.PHONY : tuan
-
-# fast build rule for target.
-tuan/fast:
-	$(MAKE) -f test/CMakeFiles/tuan.dir/build.make test/CMakeFiles/tuan.dir/build
-.PHONY : tuan/fast
-
-#=============================================================================
-# Target rules for targets named Fibonacci
-
-# Build rule for target.
-Fibonacci: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Fibonacci
-.PHONY : Fibonacci
-
-# fast build rule for target.
-Fibonacci/fast:
-	$(MAKE) -f test/CMakeFiles/Fibonacci.dir/build.make test/CMakeFiles/Fibonacci.dir/build
-.PHONY : Fibonacci/fast
-
-#=============================================================================
-# Target rules for targets named jc1
-
-# Build rule for target.
-jc1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 jc1
-.PHONY : jc1
-
-# fast build rule for target.
-jc1/fast:
-	$(MAKE) -f test/CMakeFiles/jc1.dir/build.make test/CMakeFiles/jc1.dir/build
-.PHONY : jc1/fast
+test_static/fast:
+	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/build
+.PHONY : test_static/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -454,186 +170,43 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named name
+# Target rules for targets named area_test
 
 # Build rule for target.
-name: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 name
-.PHONY : name
+area_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 area_test
+.PHONY : area_test
 
 # fast build rule for target.
-name/fast:
-	$(MAKE) -f test/CMakeFiles/name.dir/build.make test/CMakeFiles/name.dir/build
-.PHONY : name/fast
+area_test/fast:
+	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/build
+.PHONY : area_test/fast
 
 #=============================================================================
-# Target rules for targets named erfenfa
+# Target rules for targets named CGAL_test
 
 # Build rule for target.
-erfenfa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 erfenfa
-.PHONY : erfenfa
+CGAL_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CGAL_test
+.PHONY : CGAL_test
 
 # fast build rule for target.
-erfenfa/fast:
-	$(MAKE) -f test/CMakeFiles/erfenfa.dir/build.make test/CMakeFiles/erfenfa.dir/build
-.PHONY : erfenfa/fast
+CGAL_test/fast:
+	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
+.PHONY : CGAL_test/fast
 
 #=============================================================================
-# Target rules for targets named shuixhs
+# Target rules for targets named str_test-1
 
 # Build rule for target.
-shuixhs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shuixhs
-.PHONY : shuixhs
+str_test-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 str_test-1
+.PHONY : str_test-1
 
 # fast build rule for target.
-shuixhs/fast:
-	$(MAKE) -f test/CMakeFiles/shuixhs.dir/build.make test/CMakeFiles/shuixhs.dir/build
-.PHONY : shuixhs/fast
-
-#=============================================================================
-# Target rules for targets named sum1
-
-# Build rule for target.
-sum1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sum1
-.PHONY : sum1
-
-# fast build rule for target.
-sum1/fast:
-	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
-.PHONY : sum1/fast
-
-#=============================================================================
-# Target rules for targets named max
-
-# Build rule for target.
-max: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 max
-.PHONY : max
-
-# fast build rule for target.
-max/fast:
-	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
-.PHONY : max/fast
-
-#=============================================================================
-# Target rules for targets named zhuanzhi
-
-# Build rule for target.
-zhuanzhi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zhuanzhi
-.PHONY : zhuanzhi
-
-# fast build rule for target.
-zhuanzhi/fast:
-	$(MAKE) -f test/CMakeFiles/zhuanzhi.dir/build.make test/CMakeFiles/zhuanzhi.dir/build
-.PHONY : zhuanzhi/fast
-
-#=============================================================================
-# Target rules for targets named NTdiedaifa
-
-# Build rule for target.
-NTdiedaifa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NTdiedaifa
-.PHONY : NTdiedaifa
-
-# fast build rule for target.
-NTdiedaifa/fast:
-	$(MAKE) -f test/CMakeFiles/NTdiedaifa.dir/build.make test/CMakeFiles/NTdiedaifa.dir/build
-.PHONY : NTdiedaifa/fast
-
-#=============================================================================
-# Target rules for targets named pi
-
-# Build rule for target.
-pi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pi
-.PHONY : pi
-
-# fast build rule for target.
-pi/fast:
-	$(MAKE) -f test/CMakeFiles/pi.dir/build.make test/CMakeFiles/pi.dir/build
-.PHONY : pi/fast
-
-#=============================================================================
-# Target rules for targets named gys
-
-# Build rule for target.
-gys: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gys
-.PHONY : gys
-
-# fast build rule for target.
-gys/fast:
-	$(MAKE) -f test/CMakeFiles/gys.dir/build.make test/CMakeFiles/gys.dir/build
-.PHONY : gys/fast
-
-#=============================================================================
-# Target rules for targets named assign
-
-# Build rule for target.
-assign: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 assign
-.PHONY : assign
-
-# fast build rule for target.
-assign/fast:
-	$(MAKE) -f test/CMakeFiles/assign.dir/build.make test/CMakeFiles/assign.dir/build
-.PHONY : assign/fast
-
-#=============================================================================
-# Target rules for targets named yuanta
-
-# Build rule for target.
-yuanta: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yuanta
-.PHONY : yuanta
-
-# fast build rule for target.
-yuanta/fast:
-	$(MAKE) -f test/CMakeFiles/yuanta.dir/build.make test/CMakeFiles/yuanta.dir/build
-.PHONY : yuanta/fast
-
-#=============================================================================
-# Target rules for targets named class
-
-# Build rule for target.
-class: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 class
-.PHONY : class
-
-# fast build rule for target.
-class/fast:
-	$(MAKE) -f test/CMakeFiles/class.dir/build.make test/CMakeFiles/class.dir/build
-.PHONY : class/fast
-
-#=============================================================================
-# Target rules for targets named equation
-
-# Build rule for target.
-equation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 equation
-.PHONY : equation
-
-# fast build rule for target.
-equation/fast:
-	$(MAKE) -f test/CMakeFiles/equation.dir/build.make test/CMakeFiles/equation.dir/build
-.PHONY : equation/fast
-
-#=============================================================================
-# Target rules for targets named NTerfenfa
-
-# Build rule for target.
-NTerfenfa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NTerfenfa
-.PHONY : NTerfenfa
-
-# fast build rule for target.
-NTerfenfa/fast:
-	$(MAKE) -f test/CMakeFiles/NTerfenfa.dir/build.make test/CMakeFiles/NTerfenfa.dir/build
-.PHONY : NTerfenfa/fast
+str_test-1/fast:
+	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/build
+.PHONY : str_test-1/fast
 
 # Help Target
 help:
@@ -641,49 +214,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... spheretest"
-	@echo "... struct"
-	@echo "... if_else"
-	@echo "... Sum"
-	@echo "... Max"
-	@echo "... sm2"
-	@echo "... zhizhen"
-	@echo "... convert"
-	@echo "... equation1"
-	@echo "... sushu"
-	@echo "... zhengchu"
-	@echo "... jiecheng"
-	@echo "... qdxs"
-	@echo "... paixu"
-	@echo "... Helloworld"
-	@echo "... max-jz"
-	@echo "... math1"
-	@echo "... CGAL_test"
-	@echo "... sqr"
-	@echo "... tuan"
-	@echo "... Fibonacci"
-	@echo "... jc1"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... test_static"
 	@echo "... main"
-	@echo "... name"
-	@echo "... erfenfa"
-	@echo "... shuixhs"
-	@echo "... sum1"
-	@echo "... max"
-	@echo "... zhuanzhi"
-	@echo "... NTdiedaifa"
-	@echo "... pi"
-	@echo "... gys"
-	@echo "... assign"
-	@echo "... yuanta"
-	@echo "... class"
-	@echo "... equation"
-	@echo "... NTerfenfa"
+	@echo "... area_test"
+	@echo "... CGAL_test"
+	@echo "... str_test-1"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/struct_arry.dir/struct_arry.cpp.o  -o struct_arry  -L/usr/local/lib -rdynamic 

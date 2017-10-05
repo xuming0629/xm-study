@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/qdxs.dir/qdxs.cpp.o  -o qdxs  -L/usr/local/lib -rdynamic 

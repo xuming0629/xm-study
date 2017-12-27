@@ -7,3 +7,6 @@ add_executable(main main.cpp)
 add_executable(test_static test_static.cpp)
 add_executable(str_test-1 str_test-1.cpp)
 add_executable(area_test area_test.cpp)
+add_executable(20 20.cpp)
+
+

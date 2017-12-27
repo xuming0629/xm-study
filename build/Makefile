@@ -144,43 +144,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_static
+# Target rules for targets named str_test-1
 
 # Build rule for target.
-test_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_static
-.PHONY : test_static
+str_test-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 str_test-1
+.PHONY : str_test-1
 
 # fast build rule for target.
-test_static/fast:
-	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/build
-.PHONY : test_static/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named area_test
-
-# Build rule for target.
-area_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 area_test
-.PHONY : area_test
-
-# fast build rule for target.
-area_test/fast:
-	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/build
-.PHONY : area_test/fast
+str_test-1/fast:
+	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/build
+.PHONY : str_test-1/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -196,17 +170,56 @@ CGAL_test/fast:
 .PHONY : CGAL_test/fast
 
 #=============================================================================
-# Target rules for targets named str_test-1
+# Target rules for targets named area_test
 
 # Build rule for target.
-str_test-1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 str_test-1
-.PHONY : str_test-1
+area_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 area_test
+.PHONY : area_test
 
 # fast build rule for target.
-str_test-1/fast:
-	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/build
-.PHONY : str_test-1/fast
+area_test/fast:
+	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/build
+.PHONY : area_test/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named test_static
+
+# Build rule for target.
+test_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_static
+.PHONY : test_static
+
+# fast build rule for target.
+test_static/fast:
+	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/build
+.PHONY : test_static/fast
+
+#=============================================================================
+# Target rules for targets named 20
+
+# Build rule for target.
+20: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 20
+.PHONY : 20
+
+# fast build rule for target.
+20/fast:
+	$(MAKE) -f test/CMakeFiles/20.dir/build.make test/CMakeFiles/20.dir/build
+.PHONY : 20/fast
 
 # Help Target
 help:
@@ -219,11 +232,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... test_static"
-	@echo "... main"
-	@echo "... area_test"
-	@echo "... CGAL_test"
 	@echo "... str_test-1"
+	@echo "... CGAL_test"
+	@echo "... area_test"
+	@echo "... main"
+	@echo "... test_static"
+	@echo "... 20"
 .PHONY : help
 
 

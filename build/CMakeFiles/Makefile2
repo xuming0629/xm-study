@@ -81,20 +81,22 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/test_static.dir/all
-test/all: test/CMakeFiles/main.dir/all
-test/all: test/CMakeFiles/area_test.dir/all
-test/all: test/CMakeFiles/CGAL_test.dir/all
 test/all: test/CMakeFiles/str_test-1.dir/all
+test/all: test/CMakeFiles/CGAL_test.dir/all
+test/all: test/CMakeFiles/area_test.dir/all
+test/all: test/CMakeFiles/main.dir/all
+test/all: test/CMakeFiles/test_static.dir/all
+test/all: test/CMakeFiles/20.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/test_static.dir/clean
-test/clean: test/CMakeFiles/main.dir/clean
-test/clean: test/CMakeFiles/area_test.dir/clean
-test/clean: test/CMakeFiles/CGAL_test.dir/clean
 test/clean: test/CMakeFiles/str_test-1.dir/clean
+test/clean: test/CMakeFiles/CGAL_test.dir/clean
+test/clean: test/CMakeFiles/area_test.dir/clean
+test/clean: test/CMakeFiles/main.dir/clean
+test/clean: test/CMakeFiles/test_static.dir/clean
+test/clean: test/CMakeFiles/20.dir/clean
 
 .PHONY : test/clean
 
@@ -104,113 +106,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/test_static.dir
+# Target rules for target test/CMakeFiles/str_test-1.dir
 
 # All Build rule for target.
-test/CMakeFiles/test_static.dir/all:
-	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/depend
-	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=9,10 "Built target test_static"
-.PHONY : test/CMakeFiles/test_static.dir/all
+test/CMakeFiles/str_test-1.dir/all:
+	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/depend
+	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=9,10 "Built target str_test-1"
+.PHONY : test/CMakeFiles/str_test-1.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/test_static.dir/all
+all: test/CMakeFiles/str_test-1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/test_static.dir/rule: cmake_check_build_system
+test/CMakeFiles/str_test-1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/str_test-1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/test_static.dir/rule
+.PHONY : test/CMakeFiles/str_test-1.dir/rule
 
 # Convenience name for target.
-test_static: test/CMakeFiles/test_static.dir/rule
+str_test-1: test/CMakeFiles/str_test-1.dir/rule
 
-.PHONY : test_static
-
-# clean rule for target.
-test/CMakeFiles/test_static.dir/clean:
-	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/clean
-.PHONY : test/CMakeFiles/test_static.dir/clean
+.PHONY : str_test-1
 
 # clean rule for target.
-clean: test/CMakeFiles/test_static.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/main.dir
-
-# All Build rule for target.
-test/CMakeFiles/main.dir/all:
-	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/depend
-	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=5,6 "Built target main"
-.PHONY : test/CMakeFiles/main.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/main.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: test/CMakeFiles/main.dir/rule
-
-.PHONY : main
+test/CMakeFiles/str_test-1.dir/clean:
+	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/clean
+.PHONY : test/CMakeFiles/str_test-1.dir/clean
 
 # clean rule for target.
-test/CMakeFiles/main.dir/clean:
-	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/clean
-.PHONY : test/CMakeFiles/main.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/main.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/area_test.dir
-
-# All Build rule for target.
-test/CMakeFiles/area_test.dir/all:
-	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/depend
-	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=3,4 "Built target area_test"
-.PHONY : test/CMakeFiles/area_test.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/area_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/area_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/area_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/area_test.dir/rule
-
-# Convenience name for target.
-area_test: test/CMakeFiles/area_test.dir/rule
-
-.PHONY : area_test
-
-# clean rule for target.
-test/CMakeFiles/area_test.dir/clean:
-	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/clean
-.PHONY : test/CMakeFiles/area_test.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/area_test.dir/clean
+clean: test/CMakeFiles/str_test-1.dir/clean
 
 .PHONY : clean
 
@@ -221,7 +149,7 @@ clean: test/CMakeFiles/area_test.dir/clean
 test/CMakeFiles/CGAL_test.dir/all:
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/depend
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=1,2 "Built target CGAL_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=3,4 "Built target CGAL_test"
 .PHONY : test/CMakeFiles/CGAL_test.dir/all
 
 # Include target in all.
@@ -252,39 +180,150 @@ clean: test/CMakeFiles/CGAL_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/str_test-1.dir
+# Target rules for target test/CMakeFiles/area_test.dir
 
 # All Build rule for target.
-test/CMakeFiles/str_test-1.dir/all:
-	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/depend
-	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=7,8 "Built target str_test-1"
-.PHONY : test/CMakeFiles/str_test-1.dir/all
+test/CMakeFiles/area_test.dir/all:
+	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/depend
+	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=5,6 "Built target area_test"
+.PHONY : test/CMakeFiles/area_test.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/str_test-1.dir/all
+all: test/CMakeFiles/area_test.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/str_test-1.dir/rule: cmake_check_build_system
+test/CMakeFiles/area_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/str_test-1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/area_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/str_test-1.dir/rule
+.PHONY : test/CMakeFiles/area_test.dir/rule
 
 # Convenience name for target.
-str_test-1: test/CMakeFiles/str_test-1.dir/rule
+area_test: test/CMakeFiles/area_test.dir/rule
 
-.PHONY : str_test-1
-
-# clean rule for target.
-test/CMakeFiles/str_test-1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/str_test-1.dir/build.make test/CMakeFiles/str_test-1.dir/clean
-.PHONY : test/CMakeFiles/str_test-1.dir/clean
+.PHONY : area_test
 
 # clean rule for target.
-clean: test/CMakeFiles/str_test-1.dir/clean
+test/CMakeFiles/area_test.dir/clean:
+	$(MAKE) -f test/CMakeFiles/area_test.dir/build.make test/CMakeFiles/area_test.dir/clean
+.PHONY : test/CMakeFiles/area_test.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/area_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/main.dir
+
+# All Build rule for target.
+test/CMakeFiles/main.dir/all:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/depend
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=7,8 "Built target main"
+.PHONY : test/CMakeFiles/main.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: test/CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+test/CMakeFiles/main.dir/clean:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/clean
+.PHONY : test/CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_static.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_static.dir/all:
+	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/depend
+	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=11,12 "Built target test_static"
+.PHONY : test/CMakeFiles/test_static.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/test_static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_static.dir/rule
+
+# Convenience name for target.
+test_static: test/CMakeFiles/test_static.dir/rule
+
+.PHONY : test_static
+
+# clean rule for target.
+test/CMakeFiles/test_static.dir/clean:
+	$(MAKE) -f test/CMakeFiles/test_static.dir/build.make test/CMakeFiles/test_static.dir/clean
+.PHONY : test/CMakeFiles/test_static.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/test_static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/20.dir
+
+# All Build rule for target.
+test/CMakeFiles/20.dir/all:
+	$(MAKE) -f test/CMakeFiles/20.dir/build.make test/CMakeFiles/20.dir/depend
+	$(MAKE) -f test/CMakeFiles/20.dir/build.make test/CMakeFiles/20.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/repository/xm-study/build/CMakeFiles --progress-num=1,2 "Built target 20"
+.PHONY : test/CMakeFiles/20.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/20.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/20.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/20.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/repository/xm-study/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/20.dir/rule
+
+# Convenience name for target.
+20: test/CMakeFiles/20.dir/rule
+
+.PHONY : 20
+
+# clean rule for target.
+test/CMakeFiles/20.dir/clean:
+	$(MAKE) -f test/CMakeFiles/20.dir/build.make test/CMakeFiles/20.dir/clean
+.PHONY : test/CMakeFiles/20.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/20.dir/clean
 
 .PHONY : clean
 

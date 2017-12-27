@@ -49,9 +49,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "test/CMakeFiles/test_static.dir/DependInfo.cmake"
-  "test/CMakeFiles/main.dir/DependInfo.cmake"
-  "test/CMakeFiles/area_test.dir/DependInfo.cmake"
-  "test/CMakeFiles/CGAL_test.dir/DependInfo.cmake"
   "test/CMakeFiles/str_test-1.dir/DependInfo.cmake"
+  "test/CMakeFiles/CGAL_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/area_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/main.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_static.dir/DependInfo.cmake"
+  "test/CMakeFiles/20.dir/DependInfo.cmake"
   )
